@@ -3,7 +3,7 @@ sidebar_position: 3
 id: quick-install-ovh
 title: نصب سریع در OVH
 tags:
-  - نصب
+  - نصب سریع
   - هایدیفای
   - OVH
 ---

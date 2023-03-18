@@ -3,7 +3,7 @@ sidebar_position: 2
 id: quick-install-hetzner
 title: نصب سریع در Hetzner
 tags:
-  - نصب
+  - نصب سریع
   - هایدیفای
   - hetzner
 ---
