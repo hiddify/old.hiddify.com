@@ -7,6 +7,8 @@ on:
     # Review gh actions docs if you want to further define triggers, paths, etc
     # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
 
+permissions: write-all
+
 jobs:
   deploy:
     name: Deploy to GitHub Pages 🚀
@@ -28,6 +30,5 @@ jobs:
       - name: Deploy to GitHub Pages 🚛
         uses: peaceiris/actions-gh-pages@v3
         with:
-          permission: write-all
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
