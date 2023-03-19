@@ -4,7 +4,7 @@ id: quick-install-vultr
 title: نصب سریع در Vultr
 tags:
   - نصب سریع
-  - هایدیفای
+  - هیدیفای
   - vultr
 ---
 

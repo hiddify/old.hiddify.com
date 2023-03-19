@@ -4,7 +4,7 @@ id: docker
 title: نصب در Docker
 tags:
   - نصب
-  - هایدیفای
+  - هیدیفای
   - docker
 ---
 

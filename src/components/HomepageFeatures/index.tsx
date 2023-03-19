@@ -1,17 +1,17 @@
-import React from 'react'
-import clsx from 'clsx'
-import styles from './styles.module.css'
+import React from "react";
+import clsx from "clsx";
+import styles from "./styles.module.css";
 
 type FeatureItem = {
-  title: string
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>
-  description: JSX.Element
-}
+  title: string;
+  Svg: React.ComponentType<React.ComponentProps<"svg">>;
+  description: JSX.Element;
+};
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'نصب سریع',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: "نصب سریع",
+    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
     description: (
       <>
         پنل گذر از فیلترینگ چند کاربره‌ی هیدیفای، با امکان نصب خیلی راحت و نصب
@@ -20,18 +20,18 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'پروکسی هوشمند',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: "پروکسی هوشمند",
+    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
     description: (
       <>
-        با استفاده از کلاینت کلش و پنل هایدیفای می‌تونین در ۳ حالت به اینترنت
-        وصل بشید{' '}
+        با استفاده از کلاینت کلش و پنل هیدیفای می‌تونین در ۳ حالت به اینترنت وصل
+        بشید{" "}
       </>
     ),
   },
   {
-    title: 'مدیریت کاربران',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: "مدیریت کاربران",
+    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
     description: (
       <>
         تعریف چندین کاربر با امکان تعیین مدت زمان استفاده و تعریف میزان مصرف
@@ -39,11 +39,11 @@ const FeatureList: FeatureItem[] = [
       </>
     ),
   },
-]
+];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, Svg, description }: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx("col col--4")}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
@@ -52,7 +52,7 @@ function Feature({title, Svg, description}: FeatureItem) {
         <p>{description}</p>
       </div>
     </div>
-  )
+  );
 }
 
 export default function HomepageFeatures(): JSX.Element {
@@ -66,5 +66,5 @@ export default function HomepageFeatures(): JSX.Element {
         </div>
       </div>
     </section>
-  )
+  );
 }

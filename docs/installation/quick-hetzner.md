@@ -4,7 +4,7 @@ id: quick-install-hetzner
 title: نصب سریع در Hetzner
 tags:
   - نصب سریع
-  - هایدیفای
+  - هیدیفای
   - hetzner
 ---
 

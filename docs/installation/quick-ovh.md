@@ -4,7 +4,7 @@ id: quick-install-ovh
 title: نصب سریع در OVH
 tags:
   - نصب سریع
-  - هایدیفای
+  - هیدیفای
   - OVH
 ---
 

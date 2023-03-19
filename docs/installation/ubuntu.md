@@ -4,7 +4,7 @@ id: ubuntu
 title: نصب در Ubuntu
 tags:
   - نصب
-  - هایدیفای
+  - هیدیفای
   - ubuntu
 ---
 
