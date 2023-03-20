@@ -106,7 +106,7 @@ const config = {
             title: "Community",
             items: [
               {
-                label: "Telegram Chanel",
+                label: "Telegram Channel",
                 href: "https://t.me/hiddify",
               },
               {
