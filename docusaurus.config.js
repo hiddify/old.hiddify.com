@@ -68,12 +68,12 @@ const config = {
           src: "img/logo.png",
         },
         items: [
-          {
-            type: "doc",
-            docId: "intro",
-            position: "left",
-            label: "آموزش",
-          },
+          // {
+          //   type: "doc",
+          //   docId: "intro",
+          //   position: "left",
+          //   label: "آموزش",
+          // },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
             type: "localeDropdown",
@@ -89,25 +89,29 @@ const config = {
       footer: {
         style: "dark",
         links: [
-          {
-            title: "مستندات",
-            items: [
-              {
-                label: "معرفی",
-                to: "/docs/intro",
-              },
-              {
-                label: "نصب",
-                to: "/docs/category/%D9%86%D8%B5%D8%A8",
-              },
-            ],
-          },
+          // {
+          //   title: "مستندات",
+          //   items: [
+          //     {
+          //       label: "معرفی",
+          //       to: "/docs/intro",
+          //     },
+          //     {
+          //       label: "نصب",
+          //       to: "/docs/category/%D9%86%D8%B5%D8%A8",
+          //     },
+          //   ],
+          // },
           {
             title: "Community",
             items: [
               {
-                label: "Discord",
-                href: "#",
+                label: "Telegram Chanel",
+                href: "https://t.me/hiddify",
+              },
+              {
+                label: "Telegram Discussion",
+                href: "https://t.me/hiddify_board",
               },
               {
                 label: "Twitter",

@@ -17,13 +17,13 @@ function HomepageHeader() {
         </h1>
         <p className="hero__subtitle">
           <Translate id="homepage.main_heading_subtitle">
-            عبور سریع از فیلترینگ
+            ابزار حرفه‌ای و قدرتمند ضدسانسور
           </Translate>
         </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro"
+            to="https://github.com/hiddify/hiddify-config/wiki"
           >
             <Translate id="homepage.main_heading_button">
               آموزش نصب در ۵ دقیقه ⏱️
