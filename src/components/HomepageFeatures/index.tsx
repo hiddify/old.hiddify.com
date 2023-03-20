@@ -1,6 +1,7 @@
 import React from "react";
 import clsx from "clsx";
 import styles from "./styles.module.css";
+import Translate, { translate } from "@docusaurus/Translate";
 
 type FeatureItem = {
   title: string;
@@ -10,33 +11,42 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: "نصب سریع",
+    title: translate({
+      id: "homepage.featureList_title_1",
+      message: "نصب سریع",
+    }),
     Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
     description: (
-      <>
+      <Translate id="homepage.featureList_description_1">
         پنل گذر از فیلترینگ چند کاربره‌ی هیدیفای، با امکان نصب خیلی راحت و نصب
         بیش از ۲۰ پروتوکل گذر از فیلترینگ و پروکسی تلگرام
-      </>
+      </Translate>
     ),
   },
   {
-    title: "پروکسی هوشمند",
+    title: translate({
+      id: "homepage.featureList_title_2",
+      message: "پروکسی هوشمند",
+    }),
     Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
     description: (
-      <>
+      <Translate id="homepage.featureList_description_2">
         با استفاده از کلاینت کلش و پنل هیدیفای می‌تونین در ۳ حالت به اینترنت وصل
-        بشید{" "}
-      </>
+        بشید
+      </Translate>
     ),
   },
   {
-    title: "مدیریت کاربران",
+    title: translate({
+      id: "homepage.featureList_title_3",
+      message: "مدیریت کاربران",
+    }),
     Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
     description: (
-      <>
+      <Translate id="homepage.featureList_description_3">
         تعریف چندین کاربر با امکان تعیین مدت زمان استفاده و تعریف میزان مصرف
         برای هر کاربر با امکان مشاهده زمان و حجم مصرف شده
-      </>
+      </Translate>
     ),
   },
 ];

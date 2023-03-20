@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Hiddify",
+    "description": "The title in the navbar"
+  },
+  "item.label.آموزش": {
+    "message": "Tutorials",
+    "description": "Navbar item with label آموزش"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

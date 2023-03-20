@@ -29,7 +29,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "fa",
-    locales: ["fa"],
+    locales: ["fa", "en"],
   },
 
   presets: [
@@ -75,6 +75,10 @@ const config = {
             label: "آموزش",
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            type: "localeDropdown",
+            position: "right",
+          },
           {
             href: "https://github.com/hiddify/hiddify-config",
             label: "GitHub",
