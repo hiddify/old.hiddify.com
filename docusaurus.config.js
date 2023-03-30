@@ -6,8 +6,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "هیدیفای",
-  tagline: "گذر سریع از فیلترینگ",
+  title: "Hiddify",
+  tagline: "ابزار حرفه‌ای و قدرتمند ضدسانسور",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -68,13 +68,13 @@ const config = {
           src: "img/logo.png",
         },
         items: [
-          // {
-          //   type: "doc",
-          //   docId: "intro",
-          //   position: "left",
-          //   label: "آموزش",
-          // },
-          // {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            type: "doc",
+            docId: "intro",
+            position: "left",
+            label: "آموزش",
+          },
+          // { to: "/blog", label: "Blog", position: "left" },
           {
             type: "localeDropdown",
             position: "right",

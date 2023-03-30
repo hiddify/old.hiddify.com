@@ -1,47 +1,55 @@
 ---
 sidebar_position: 1
 id: intro
-title: What is Hiddify
-tags:
-  - intro
-  - hiddify
+title: Introduction
+# tags:
+#   - intro
+#   - hiddify
 ---
 
-Hiddify multi-user anti-filtering panel, with an effortless installation and supporting more than 20 protocols to circumvent filtering plus the telegram proxy. It is a X-UI replacement.
+Hiddify is a powerful and professional anti-censorship toolbox, which is a multi-user panel with an effortless installation and supporting more than 20 protocols to circumvent filtering plus telegram proxy. It's optimized for censorship circumvention in China, Russia and Iran and recommended by [xray](https://github.com/XTLS/Xray-core). It's a great replacement of X-UI.
 
-### Requirements
+### Why Hiddify?
 
-- Ubuntu Version 20 , 22
-- Minimum hardware:
-  - 1 Gb of Ram
-  - 1 Core CPU
-  - 20 GB Hard
+Hiddify is a mixture of hidden and simplify. A feature-full panel with a wide range of capabilities that helps you enjoy surfing free internet with ease and peace of mind.
+
+### Hiddify features
+
+- Quick install
+- Custom softwares
+- Smart proxy (Clash client)
 
 ### Supported configs
 
 - **Telegram Proxy**
-- **Vless XTLS**
-- **WS (CDN support)**
-  - vless
-  - trojan
-  - vmess
-- **GRPC TLS**
-  - vless
-  - trojan
-  - vmess
-- **H2 TLS**
-  - vless
-  - trojan
-  - vmess
-- **HTTP1.1 TLS**
-  - trojan
-  - vmess
-- **HTTP** (unsafe, default is disable)
 
-  - vless
-  - vmess
+- **Vless**
 
-#### Other Features
+  - XTLS
+  - WS TLS
+  - GRPC TLS
+  - H2 TLS
+  - HTTP
+
+- **Trojan**
+
+  - WS TLS
+  - GRPC TLS
+  - H2 TLS
+  - HTTP 1.1
+
+- **Vmess**
+
+  - WS TLS
+  - GRPC TLS
+  - H2 TLS
+  - HTTP 1.1
+  - HTTP
+
+- **Shadowsocks**
+- **DNS over HTTPs**
+
+### Other Features
 
 - Speed test
 - User guid page
