@@ -1,11 +1,11 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 id: quick-install-hetzner
-title: نصب سریع در Hetzner
+title: نصب در Hetzner
 tags:
   - نصب سریع
-  - هیدیفای
   - hetzner
+  - بدون SSH
 ---
 
 #### ویدئوی‌های آموزشی
@@ -13,7 +13,7 @@ tags:
 - [آموزش گرفتن اکانت هتزنر از صفر تا صد](https://www.youtube.com/watch?v=XfS2Y6hZkqw)
 - [آموزش کامل مراحل نصب](https://www.youtube.com/watch?v=vQ-NAfRXTZo)
 
-## مراحل نصب پروکسی
+## مراحل نصب
 
 1. روی Add Server کلیک کنید
    ![image](https://user-images.githubusercontent.com/114227601/206861285-58832cec-a2a3-441e-91d4-8300d16584d6.png)

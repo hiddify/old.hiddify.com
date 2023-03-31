@@ -1,21 +1,22 @@
 ---
-sidebar_position: 4
-id: ubuntu
-title: نصب در Ubuntu
+sidebar_position: 2
+id: ssh
+title: نصب با SSH (حرفه‌ای)
 tags:
-  - نصب
-  - هیدیفای
+  - ssh
   - ubuntu
+  - اوبونتو
 ---
 
-#### قبل از نصب
+:::tip قبل از نصب
 
-> اگر اطلاعات مهم یا سرویس مهمی دارید توجه داشته باشید که با نصب این کانفیگ ممکن است با سرویس های دیگر شما تداخل ایجاد شود. لذا خواهشمند است هیچ سرویس خاصی بر روی سرور شما نصب نباشد.
+اگر اطلاعات مهم یا سرویس مهمی دارید توجه داشته باشید که با نصب این کانفیگ ممکن است با سرویس های دیگر شما تداخل ایجاد شود. لذا خواهشمند است هیچ سرویس خاصی بر روی سرور شما نصب نباشد.
+:::
 
-## مراحل نصب در اوبونتو
+## مراحل نصب
 
 1. برای نصب دستور زیر را در ترمینال کپی کنید و اجرا کنید
-   - این کد فقط بر روی ** (َUbuntu)اوبونتو** قابل اجرا هست و بر روی ورژن ** 20.04 و 22.04 ** تست شده است.
+   - این کد فقط بر روی ** (َUbuntu)اوبونتو** قابل اجرا هست
 
 ```bash
 sudo apt update && sudo apt install curl
@@ -34,8 +35,7 @@ cd /opt/hiddify-config
 sudo bash update.sh
 ```
 
----
-
+<!--
 #### پشتیبانی از CDN (اختیاری)
 
 برای سرعت بالاتر و گذر از اینترانت کافی است که یک دامنه خریداری کنید (برای مثال از
@@ -85,5 +85,5 @@ After your domain nameservers changed successfully (depending on the registrar, 
 7. After the certificate is issued, enable the `Activate HTTPS` option.
    ![HTTPS Settings > Activate HTTPS](https://raw.githubusercontent.com/WeAreMahsaAmini/FreeInternet/main/protocols/media/arvanclound_https.jpg "Enable cloud services")
 
-توضیحات بخش CDN برگرفته از دوستان  
-[FreeInternet](https://github.com/WeAreMahsaAmini/FreeInternet/tree/main/protocols/shadowsocks-v2ray-tls)
+توضیحات بخش CDN برگرفته از دوستان
+[FreeInternet](https://github.com/WeAreMahsaAmini/FreeInternet/tree/main/protocols/shadowsocks-v2ray-tls) -->

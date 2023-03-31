@@ -1,0 +1,8 @@
+{
+  "label": "نصب بدون SSH",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "در این روش به صورت خیلی سریع و آسان بدون نیاز به دانش فنی و ssh و با استفاده از قابلیت cloud-init  انجام می شود."
+  }
+}
