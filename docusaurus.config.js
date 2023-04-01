@@ -110,12 +110,16 @@ const config = {
                 href: "https://t.me/hiddify",
               },
               {
-                label: "Telegram Discussion",
+                label: "Telegram Support Group",
                 href: "https://t.me/hiddify_board",
               },
               {
+                label: "Youtube",
+                href: "https://www.youtube.com/@hiddify",
+              },
+              {
                 label: "Twitter",
-                href: "https://twitter.com/hiddify1",
+                href: "https://twitter.com/hiddify_com",
               },
             ],
           },
