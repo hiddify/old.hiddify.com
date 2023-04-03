@@ -28,7 +28,7 @@ import YouTube from "react-youtube";
 
   ابونتو یک توزیع از سیستم عامل لینوکس است که لوگوی آن بدین شکل است. ![](https://img.shields.io/badge/Ubuntu--E95420?style=flat-square&logo=ubuntu)
 
-- حداقل سخت افزار مورد نیاز:
+- حداقل منابع مورد نیاز:
   - ۱ گیگابایت رم
   - ۱ هسته CPU
   - ۱۰ گیگابایت هارد
