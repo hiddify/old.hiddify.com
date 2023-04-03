@@ -8,12 +8,13 @@ tags:
   - بدون SSH
 ---
 
-#### ویدئوی‌های آموزشی
+import YouTube from "react-youtube";
 
-- [آموزش کامل مراحل نصب](https://www.youtube.com/watch?v=hRRg10BURJI) ( در
-  ویدئوی زیر تمامی مراحل شامل نصب پروکسی و تنظیم دامنه و زیردامنه با جزییات کامل
-  شرح داده شده است. حتما با فیلترشکن به سایت ولتر مراجعه کنید در غیر این صورت
-  اکانت شما بسته می‌شود.)
+### ویدئوی‌ آموزشی مراحل نصب
+
+<YouTube videoId="hRRg10BURJI" opts={{ width: "100%" }} />
+
+---
 
 ## مراحل نصب
 
@@ -53,6 +54,4 @@ output: { all: "| tee -a /root/cloud-init-output.log" }
 
 ![Group 1](https://user-images.githubusercontent.com/79760104/221190008-239cd200-4184-4c05-82ea-ff00a47e920e.jpg)
 
-4. حالا باید دامنه را تنظیم کنید. بر روی
-   [این لینک](https://github.com/hiddify/hiddify-config/wiki/%D8%B1%D8%A7%D9%87%D9%86%D9%85%D8%A7%DB%8C-%D8%AA%D9%86%D8%B8%DB%8C%D9%85-%D8%AF%D8%A7%D9%85%D9%86%D9%87-%D9%88-%D8%B2%DB%8C%D8%B1-%D8%AF%D8%A7%D9%85%D9%86%D9%87)
-   کلیک کنید تا نصب را نهایی کنید
+4. در آخر باید دامنه را تنظیم کنیم و نصب را **نهایی** کنیم. برای اینکار به صفحه [نهایی کردن نصب](/docs/installation/finalize) بروید.
