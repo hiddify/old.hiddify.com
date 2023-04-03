@@ -1,9 +1,8 @@
 ---
 sidebar_position: 2
-id: ssh
-title: نصب با SSH (حرفه‌ای)
+id: ubuntu-installation
+title: نصب در اوبونتو (Ubuntu)
 tags:
-  - ssh
   - ubuntu
   - اوبونتو
 ---
