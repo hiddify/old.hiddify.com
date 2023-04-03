@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 id: finalize
-description: "نهایی کردن نصب هیدیفای٫ تمامی روش‌های نصب نیاز به نهایی کردن دارند"
+description: ""
 title: "نهایی کردن نصب"
 # tags:
 #   - پیشنیاز ها
