@@ -10,6 +10,8 @@ tags:
 
 import YouTube from "react-youtube";
 
+# نصب سریع در Vultr
+
 ### ویدئوی‌ آموزشی مراحل نصب
 
 <YouTube videoId="hRRg10BURJI" opts={{ width: "100%" }} />

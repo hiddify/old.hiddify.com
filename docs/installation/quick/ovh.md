@@ -10,6 +10,8 @@ tags:
 
 import YouTube from "react-youtube";
 
+# نصب سریع در OVH
+
 ### ویدئوی‌ آموزشی مراحل نصب
 
 <YouTube videoId="06fMizOb-DE" opts={{ width: "100%" }} />
