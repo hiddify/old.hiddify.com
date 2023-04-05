@@ -1,205 +1,228 @@
 {
+  "homepage.main_heading_title": {
+    "message": "هیدیفای"
+  },
+  "homepage.main_heading_subtitle": {
+    "message": "ابزار حرفه‌ای و قدرتمند ضدسانسور"
+  },
+  "homepage.main_heading_button": {
+    "message": "آموزش نصب در ۵ دقیقه ⏱️"
+  },
+  "homepage.featureList_title_1": {
+    "message": "مقاوم در برابر فیلترینگ"
+  },
+  "homepage.featureList_description_1": {
+    "message": "پشتیبانی از پروتکلهای Vmess, Vless, Trojan, Telegram, MTProto, Xray و با قابلیت کانفیگ آیپی خودکار برای کلادفلر"
+  },
+  "homepage.featureList_title_2": {
+    "message": "پروکسی هوشمند"
+  },
+  "homepage.featureList_description_2": {
+    "message": "پنل گذر از فیلترینگ با امکان نصب سریع به همراه پروکسی هوشمند برای اتصال به اینترنت در سه حالت مختلف"
+  },
+  "homepage.featureList_title_3": {
+    "message": "مدیریت یکپارچه‌ی کاربران"
+  },
+  "homepage.featureList_description_3": {
+    "message": "قابلیت افزودن و مدیریت کاربران و اعمال محدودیت زمان و حجم استفاده شده در سرورهای مختلف"
+  },
   "theme.ErrorPageContent.title": {
-    "message": "This page crashed.",
+    "message": "بارگذاری صفحه با خطا روبرو شد.",
     "description": "The title of the fallback page when the page crashed"
   },
-  "theme.ErrorPageContent.tryAgain": {
-    "message": "Try again",
-    "description": "The label of the button to try again rendering when the React error boundary captures an error"
-  },
   "theme.NotFound.title": {
-    "message": "Page Not Found",
+    "message": "صفحه ای که دنبال آن بودید پیدا نشد.",
     "description": "The title of the 404 page"
   },
   "theme.NotFound.p1": {
-    "message": "We could not find what you were looking for.",
+    "message": "صفحه‌ای که دنبال آن بودید پیدا نشد.",
     "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
-    "message": "Please contact the owner of the site that linked you to the original URL and let them know their link is broken.",
+    "message": "لطفا با صاحب وبسایت تماس بگیرید و ایشان را از مشکل پیش آمده مطلع کنید.",
     "description": "The 2nd paragraph of the 404 page"
   },
   "theme.admonition.note": {
-    "message": "note",
+    "message": "یاد داشت",
     "description": "The default label used for the Note admonition (:::note)"
   },
   "theme.admonition.tip": {
-    "message": "tip",
+    "message": "نکته",
     "description": "The default label used for the Tip admonition (:::tip)"
   },
   "theme.admonition.danger": {
-    "message": "danger",
+    "message": "اخطار",
     "description": "The default label used for the Danger admonition (:::danger)"
   },
   "theme.admonition.info": {
-    "message": "info",
+    "message": "اطلاعات",
     "description": "The default label used for the Info admonition (:::info)"
   },
   "theme.admonition.caution": {
-    "message": "caution",
+    "message": "احتیاط",
     "description": "The default label used for the Caution admonition (:::caution)"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "Scroll back to top",
+    "message": "بازگشت به بالا",
     "description": "The ARIA label for the back to top button"
   },
   "theme.blog.archive.title": {
-    "message": "Archive",
+    "message": "آرشیو",
     "description": "The page & hero title of the blog archive page"
   },
   "theme.blog.archive.description": {
-    "message": "Archive",
+    "message": "آرشیو",
     "description": "The page & hero description of the blog archive page"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "Blog list page navigation",
+    "message": "کنترل لیست مطالب وبلاگ",
     "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "Newer Entries",
+    "message": "مطالب جدید‌تر",
     "description": "The label used to navigate to the newer blog posts page (previous page)"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "Older Entries",
+    "message": "مطالب قدیمی‌تر",
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "Blog post page navigation",
+    "message": "کنترل پست‌های صفحه وبلاگ",
     "description": "The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "Newer Post",
+    "message": "پست جدید‌تر",
     "description": "The blog post button label to navigate to the newer/previous post"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "Older Post",
+    "message": "پست قدیمی‌تر",
     "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.blog.post.plurals": {
-    "message": "One post|{count} posts",
+    "message": "یک پست|{count} پست",
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {
-    "message": "{nPosts} tagged with \"{tagName}\"",
+    "message": "{nPosts} با برچسب \"{tagName}\"",
     "description": "The title of the page for a blog tag"
   },
   "theme.tags.tagsPageLink": {
-    "message": "View All Tags",
+    "message": "مشاهده تمام برچسب‌ها",
     "description": "The label of the link targeting the tag list page"
   },
-  "theme.docs.DocCard.categoryDescription": {
-    "message": "{count} items",
-    "description": "The default description for a category card in the generated index about how many items this category includes"
-  },
-  "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "Breadcrumbs",
-    "description": "The ARIA label for the breadcrumbs"
-  },
   "theme.colorToggle.ariaLabel": {
-    "message": "Switch between dark and light mode (currently {mode})",
+    "message": "بین حالت تاریک و روشن سوئیچ کنید (الان {mode})",
     "description": "The ARIA label for the navbar color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "dark mode",
+    "message": "حالت تیره",
     "description": "The name for the dark color mode"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "light mode",
+    "message": "حالت روشن",
     "description": "The name for the light color mode"
   },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "نشانگر صفحات",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.DocCard.categoryDescription": {
+    "message": "{count} مورد",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "Docs pages navigation",
+    "message": "کنترل صفحات مطالب",
     "description": "The ARIA label for the docs pagination"
   },
   "theme.docs.paginator.previous": {
-    "message": "Previous",
+    "message": "قبلی",
     "description": "The label used to navigate to the previous doc"
   },
   "theme.docs.paginator.next": {
-    "message": "Next",
+    "message": "بعدی",
     "description": "The label used to navigate to the next doc"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "One doc tagged|{count} docs tagged",
+    "message": "یک مطلب برچسب شده|{count} مطلب برچسب شده",
     "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} with \"{tagName}\"",
+    "message": "{nDocsTagged} با \"{tagName}\"",
     "description": "The title of the page for a docs tag"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "This is unreleased documentation for {siteTitle} {versionLabel} version.",
+    "message": "نسخه {siteTitle} {versionLabel} هنوز به صورت کامل منتشر نشده است.",
     "description": "The label used to tell the user that he's browsing an unreleased doc version"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "This is documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.",
+    "message": "نسخه {siteTitle} {versionLabel} دیگر به روز رسانی نمی شود.",
     "description": "The label used to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).",
+    "message": "برای دیدن آخرین نسخه این متن، نسخه {latestVersionLink} ({versionLabel}) را ببینید.",
     "description": "The label used to tell the user to check the latest version"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "latest version",
+    "message": "آخرین نسخه",
     "description": "The label used for the latest version suggestion link label"
   },
   "theme.docs.versionBadge.label": {
-    "message": "Version: {versionLabel}"
+    "message": "نسخه: {versionLabel}"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "لینک مستقیم به {heading}",
+    "description": "Title for link to heading"
   },
   "theme.common.editThisPage": {
-    "message": "Edit this page",
+    "message": "ویرایش مطالب این صفحه",
     "description": "The link label to edit the current page"
   },
   "theme.lastUpdated.atDate": {
-    "message": " on {date}",
+    "message": " در تاریخ {date}",
     "description": "The words used to describe on which date a page has been last updated"
   },
   "theme.lastUpdated.byUser": {
-    "message": " by {user}",
+    "message": " توسط {user}",
     "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "Last updated{atDate}{byUser}",
+    "message": "آخرین به روز رسانی{atDate}{byUser}",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
-  "theme.common.headingLinkTitle": {
-    "message": "Direct link to {heading}",
-    "description": "Title for link to heading"
-  },
   "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "Versions",
+    "message": "نسخه‌ها",
     "description": "The label for the navbar versions dropdown on mobile view"
   },
   "theme.tags.tagsListLabel": {
-    "message": "Tags:",
+    "message": "برچسب‌ها:",
     "description": "The label alongside a tag list"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "Close",
+    "message": "بستن",
     "description": "The ARIA label for close button of announcement bar"
   },
   "theme.blog.sidebar.navAriaLabel": {
-    "message": "Blog recent posts navigation",
+    "message": "کنترل پست‌های اخیر وبلاگ",
     "description": "The ARIA label for recent posts in the blog sidebar"
   },
   "theme.CodeBlock.wordWrapToggle": {
-    "message": "Toggle word wrap",
+    "message": "تغییر نحوه نمایش کلمه",
     "description": "The title attribute for toggle word wrapping button of code block lines"
   },
   "theme.CodeBlock.copied": {
-    "message": "Copied",
+    "message": "کپی شد",
     "description": "The copied button label on code blocks"
   },
   "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "Copy code to clipboard",
+    "message": "کپی به کلیپ‌بورد",
     "description": "The ARIA label for copy code blocks button"
   },
   "theme.CodeBlock.copy": {
-    "message": "Copy",
+    "message": "کپی",
     "description": "The copy button label on code blocks"
   },
   "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
-    "message": "Toggle the collapsible sidebar category '{label}'",
+    "message": "دسته‌بندی برچسب '{label}' در نوار کناری را تغییر دهید ",
     "description": "The ARIA label to toggle the collapsible sidebar category"
   },
   "theme.NavBar.navAriaLabel": {
@@ -211,90 +234,67 @@
     "description": "The label for the mobile language switcher dropdown"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "On this page",
+    "message": "مطالب این صفحه",
     "description": "The label used by the button on the collapsible TOC component"
   },
   "theme.blog.post.readMore": {
-    "message": "Read More",
+    "message": "ادامه مطلب",
     "description": "The label used in blog post item excerpts to link to full blog posts"
   },
   "theme.blog.post.readMoreLabel": {
-    "message": "Read more about {title}",
+    "message": "درباره {title} بیشتر بخوانید",
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "One min read|{readingTime} min read",
+    "message": "خواندن ۱ دقیقه|خواندن {readingTime} دقیقه",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.breadcrumbs.home": {
-    "message": "Home page",
+    "message": "صفحه اصلی",
     "description": "The ARIA label for the home page in the breadcrumbs"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "Collapse sidebar",
+    "message": "بستن نوار کناری",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "Collapse sidebar",
+    "message": "بستن نوار کناری",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.navAriaLabel": {
     "message": "Docs sidebar",
     "description": "The ARIA label for the sidebar navigation"
   },
-  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "Close navigation bar",
-    "description": "The ARIA label for close button of mobile sidebar"
-  },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "← Back to main menu",
+    "message": "→ بازگشت به منو اصلی",
     "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
   "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
     "message": "Toggle navigation bar",
     "description": "The ARIA label for hamburger menu button of mobile navigation"
   },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Close navigation bar",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
   "theme.docs.sidebar.expandButtonTitle": {
-    "message": "Expand sidebar",
+    "message": "باز کردن نوار کناری",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "Expand sidebar",
+    "message": "باز کردن نوار کناری",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "تلاش مجدد",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
   "theme.common.skipToMainContent": {
-    "message": "Skip to main content",
+    "message": "پرش به مطلب اصلی",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "Tags",
+    "message": "برچسب‌ها",
     "description": "The title of the tag list page"
-  },
-  "homepage.main_heading_title": {
-    "message": "Hiddify"
-  },
-  "homepage.main_heading_subtitle": {
-    "message": "Powerful & professional Anti-censorship Toolbox"
-  },
-  "homepage.main_heading_button": {
-    "message": "Quick install in 5 minutes ⏱️"
-  },
-  "homepage.featureList_title_1": {
-    "message": "Quick install"
-  },
-  "homepage.featureList_description_1": {
-    "message": "Hiddify multi-user anti-filtering panel, with an effortless installation and supporting more than 20 protocols to circumvent filtering plus the telegram proxy. It is a X-UI replacement."
-  },
-  "homepage.featureList_title_2": {
-    "message": "Smart Proxy"
-  },
-  "homepage.featureList_description_2": {
-    "message": "You can connect to the internet in 3 modes using Clash client and Hiddify panel."
-  },
-  "homepage.featureList_title_3": {
-    "message": "User management"
-  },
-  "homepage.featureList_description_3": {
-    "message": "Able to create users and put limitations on time and usage"
   }
 }

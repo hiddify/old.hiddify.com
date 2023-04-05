@@ -1,18 +1,18 @@
 {
   "title": {
-    "message": "Hiddify",
+    "message": "هیدیفای",
     "description": "The title in the navbar"
   },
+  "logo.alt": {
+    "message": "لوگو هیدیفای",
+    "description": "The alt text of navbar logo"
+  },
   "item.label.آموزش": {
-    "message": "Tutorials",
+    "message": "آموزش",
     "description": "Navbar item with label آموزش"
   },
   "item.label.GitHub": {
-    "message": "GitHub",
+    "message": "گیت‌هاب",
     "description": "Navbar item with label GitHub"
-  },
-  "logo.alt": {
-    "message": "Hiddify logo",
-    "description": "The alt text of navbar logo"
   }
 }

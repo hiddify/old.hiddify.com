@@ -5,7 +5,7 @@ import Translate, { translate } from "@docusaurus/Translate";
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<"svg">>;
+  imageSRC: string;
   description: JSX.Element;
 };
 
@@ -13,13 +13,13 @@ const FeatureList: FeatureItem[] = [
   {
     title: translate({
       id: "homepage.featureList_title_1",
-      message: "نصب سریع",
+      message: "مقاوم در برابر فیلترینگ",
     }),
-    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
+    imageSRC: require("@site/static/img/feature_anti-censorship.png").default,
     description: (
       <Translate id="homepage.featureList_description_1">
-        پنل گذر از فیلترینگ چند کاربره‌ی هیدیفای، با امکان نصب خیلی راحت و نصب
-        بیش از ۲۰ پروتوکل گذر از فیلترینگ و پروکسی تلگرام
+        پشتیبانی از پروتکلهای Vmess, Vless, Trojan, Telegram, MTProto, Xray و با
+        قابلیت کانفیگ آیپی خودکار برای کلادفلر
       </Translate>
     ),
   },
@@ -28,34 +28,34 @@ const FeatureList: FeatureItem[] = [
       id: "homepage.featureList_title_2",
       message: "پروکسی هوشمند",
     }),
-    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
+    imageSRC: require("@site/static/img/feature_smart-proxy.png").default,
     description: (
       <Translate id="homepage.featureList_description_2">
-        با استفاده از کلاینت کلش و پنل هیدیفای می‌تونین در ۳ حالت به اینترنت وصل
-        بشید
+        پنل گذر از فیلترینگ با امکان نصب سریع به همراه پروکسی هوشمند برای اتصال
+        به اینترنت در سه حالت مختلف
       </Translate>
     ),
   },
   {
     title: translate({
       id: "homepage.featureList_title_3",
-      message: "مدیریت کاربران",
+      message: "مدیریت یکپارچه‌ی کاربران",
     }),
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+    imageSRC: require("@site/static/img/feature_user-management.png").default,
     description: (
       <Translate id="homepage.featureList_description_3">
-        تعریف چندین کاربر با امکان تعیین مدت زمان استفاده و تعریف میزان مصرف
-        برای هر کاربر با امکان مشاهده زمان و حجم مصرف شده
+        قابلیت افزودن و مدیریت کاربران و اعمال محدودیت زمان و حجم استفاده شده در
+        سرورهای مختلف
       </Translate>
     ),
   },
 ];
 
-function Feature({ title, Svg, description }: FeatureItem) {
+function Feature({ title, imageSRC, description }: FeatureItem) {
   return (
     <div className={clsx("col col--4")}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img className={styles.featureSvg} src={imageSRC} />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>

@@ -103,7 +103,7 @@ const config = {
           //   ],
           // },
           {
-            title: "Community",
+            title: "Contact information",
             items: [
               {
                 label: "Telegram Channel",
@@ -137,7 +137,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Hiddify, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Hiddify, Inc. Built with Docusaurus`,
       },
       prism: {
         theme: lightCodeTheme,

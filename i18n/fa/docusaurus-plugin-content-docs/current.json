@@ -3,22 +3,6 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.tutorialSidebar.category.نصب": {
-    "message": "Installation",
-    "description": "The label for category نصب in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.نصب.link.generated-index.description": {
-    "message": "Quick install with one line of code",
-    "description": "The generated-index page description for category نصب in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.آموزش‌‌ها": {
-    "message": "Tutorials",
-    "description": "The label for category آموزش‌‌ها in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.آموزش‌‌ها.link.generated-index.description": {
-    "message": "Installation and usage tutorials",
-    "description": "The generated-index page description for category آموزش‌‌ها in sidebar tutorialSidebar"
-  },
   "sidebar.tutorialSidebar.category.نصب هیدیفای": {
     "message": "نصب هیدیفای",
     "description": "The label for category نصب هیدیفای in sidebar tutorialSidebar"
