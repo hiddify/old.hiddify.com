@@ -103,7 +103,7 @@ const config = {
           //   ],
           // },
           {
-            title: "Contact information",
+            title: "Get in touch",
             items: [
               {
                 label: "Telegram Channel",
