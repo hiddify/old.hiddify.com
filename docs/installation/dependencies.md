@@ -35,8 +35,8 @@ import YouTube from "react-youtube";
 
 :::
 
-:::info ویدیو آموزشی
+### ویدیو آموزشی
+
 جهت آشنایی بیشتر درباره روش خرید سرور از ایران٬ این ویدئو را تماشا کنید.
 
 <YouTube videoId="tcd1wBUR3cY" opts={{ width: "100%" }} />
-:::

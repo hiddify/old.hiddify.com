@@ -6,10 +6,10 @@
 
 /* You can override the default Infima variables here. */
 @font-face {
-  font-family: 'Vazirmatn';
-  src: url('/fonts/webfonts/Vazirmatn[wght].woff2')
-      format('woff2 supports variations'),
-    url('/fonts/webfonts/Vazirmatn[wght].woff2') format('woff2-variations');
+  font-family: "Vazirmatn";
+  src: url("/fonts/webfonts/Vazirmatn[wght].woff2")
+      format("woff2 supports variations"),
+    url("/fonts/webfonts/Vazirmatn[wght].woff2") format("woff2-variations");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: Vazirmatn;
-  src: url('/fonts/webfonts/Vazirmatn-Thin.woff2') format('woff2');
+  src: url("/fonts/webfonts/Vazirmatn-Thin.woff2") format("woff2");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -25,7 +25,7 @@
 
 @font-face {
   font-family: Vazirmatn;
-  src: url('/fonts/webfonts/Vazirmatn-ExtraLight.woff2') format('woff2');
+  src: url("/fonts/webfonts/Vazirmatn-ExtraLight.woff2") format("woff2");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -33,7 +33,7 @@
 
 @font-face {
   font-family: Vazirmatn;
-  src: url('/fonts/webfonts/Vazirmatn-Light.woff2') format('woff2');
+  src: url("/fonts/webfonts/Vazirmatn-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -41,7 +41,7 @@
 
 @font-face {
   font-family: Vazirmatn;
-  src: url('/fonts/webfonts/Vazirmatn-Regular.woff2') format('woff2');
+  src: url("/fonts/webfonts/Vazirmatn-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -49,7 +49,7 @@
 
 @font-face {
   font-family: Vazirmatn;
-  src: url('/fonts/webfonts/Vazirmatn-Medium.woff2') format('woff2');
+  src: url("/fonts/webfonts/Vazirmatn-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -57,7 +57,7 @@
 
 @font-face {
   font-family: Vazirmatn;
-  src: url('/fonts/webfonts/Vazirmatn-SemiBold.woff2') format('woff2');
+  src: url("/fonts/webfonts/Vazirmatn-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -65,7 +65,7 @@
 
 @font-face {
   font-family: Vazirmatn;
-  src: url('/fonts/webfonts/Vazirmatn-Bold.woff2') format('woff2');
+  src: url("/fonts/webfonts/Vazirmatn-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -73,7 +73,7 @@
 
 @font-face {
   font-family: Vazirmatn;
-  src: url('/fonts/webfonts/Vazirmatn-ExtraBold.woff2') format('woff2');
+  src: url("/fonts/webfonts/Vazirmatn-ExtraBold.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -81,7 +81,7 @@
 
 @font-face {
   font-family: Vazirmatn;
-  src: url('/fonts/webfonts/Vazirmatn-Black.woff2') format('woff2');
+  src: url("/fonts/webfonts/Vazirmatn-Black.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -89,29 +89,29 @@
 
 :root {
   --ifm-font-family-base: Vazirmatn, system-ui, -apple-system, Segoe UI, Roboto,
-    Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI',
-    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol';
+    Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
 
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #2563eb;
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #1e40af;
+  --ifm-color-primary-darkest: #1e3a8a;
+  --ifm-color-primary-light: #3b82f6;
+  --ifm-color-primary-lighter: #60a5fa;
+  --ifm-color-primary-lightest: #93c5fd;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+[data-theme="dark"] {
+  --ifm-color-primary: #3b82f6;
+  --ifm-color-primary-dark: #2563eb;
+  --ifm-color-primary-darker: #1d4ed8;
+  --ifm-color-primary-darkest: #1e40af;
+  --ifm-color-primary-light: #60a5fa;
+  --ifm-color-primary-lighter: #93c5fd;
+  --ifm-color-primary-lightest: #bfdbfe;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
