@@ -280,21 +280,21 @@
     "message": "Quick install in 5 minutes ⏱️"
   },
   "homepage.featureList_title_1": {
-    "message": "Quick install"
+    "message": "Resistant to filtering"
   },
   "homepage.featureList_description_1": {
-    "message": "Hiddify multi-user anti-filtering panel, with an effortless installation and supporting more than 20 protocols to circumvent filtering plus the telegram proxy. It is a X-UI replacement."
+    "message": "Supporting protocols Vmess, Vless, Trojan, Telegram MTProto, Xray And automatic IP configuration for Cloudflare"
   },
   "homepage.featureList_title_2": {
     "message": "Smart Proxy"
   },
   "homepage.featureList_description_2": {
-    "message": "You can connect to the internet in 3 modes using Clash client and Hiddify panel."
+    "message": "Circumventing filtering  with quick installation along with a smart proxy to connect to the Internet in three different modes"
   },
   "homepage.featureList_title_3": {
-    "message": "User management"
+    "message": "Integrated user management"
   },
   "homepage.featureList_description_3": {
-    "message": "Able to create users and put limitations on time and usage"
+    "message": "The ability to add and manage users and limit the time and traffic used on different servers"
   }
 }
