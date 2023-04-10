@@ -15,9 +15,18 @@ Hiddify is a mixture of hidden and simplify. A feature-full panel with a wide ra
 
 ### Hiddify features
 
-- Quick install
-- Custom softwares
-- Smart proxy (Clash client)
+- Quick installation
+- Smart proxy (Hidify and Clash client)
+- Automatic update
+- Automatic backup (every 6 hours)
+- Using multiple domains
+- Auto CDN IP configuration capability
+- Management of active configurations
+- User management
+- Definition of time and traffic limit for each user
+- Dedicated pages for users to view consumption and configurations
+- Dedicated and intelligent configurations
+- Dedicated client software
 
 ### Supported configs
 
