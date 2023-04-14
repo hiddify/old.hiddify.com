@@ -13,7 +13,7 @@ Hiddify is a powerful and professional anti-censorship toolbox, which is a multi
 
 Hiddify is a mixture of hidden and simplify. A feature-full panel with a wide range of capabilities that helps you enjoy surfing free internet with ease and peace of mind.
 
-### Hiddify features
+### Attractive features
 
 - Quick installation
 - Smart proxy (Hidify and Clash client)
@@ -27,36 +27,20 @@ Hiddify is a mixture of hidden and simplify. A feature-full panel with a wide ra
 - Dedicated pages for users to view consumption and configurations
 - Dedicated and intelligent configurations
 - Dedicated client software
+- And dozens of other features that you will notice after installation
 
-### Supported configs
+<details markdown="1"> <summary>Supported protocols</summary>
 
-- **Telegram Proxy**
+| Supported Configs                                                                                                   | Supported Configs                                                                                 | Supported Configs                                                         |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| **Direct**                                                                                                          | **CDN**                                                                                           | **Domain Fronting**                                                       |
+| Trojan:<br/>- TLS WS<br/>- TLS TCP<br/>- TLS gRPC<br/>- TLS H2 WS<br/>- TLS H2 TCP<br/>- TLS H2 gRPC<br/>           | Trojan:<br/>- TLS WS<br/>- TLS gRPC<br/>- TLS H2 WS<br/>- TLS H2 gRPC<br/><br/><br/>              | Trojan:<br/>- TLS WS Fake<br/><br/><br/><br/><br/><br/>                   |
+| Vless:<br/>- TLS WS<br/>- HTTP WS<br/>- TLS TLS<br/>- TLS gRPC<br/>- TLS H2 TLS<br/>- TLS H2 WS<br/>- TLS H2 gRPC   | Vless:<br/>- TLS WS<br/>- TLS gRPC<br/>- HTTP WS<br/>- TLS H2 WS<br/>- TLS H2 gRPC<br/><br/><br/> | Vless:<br/>- TLS WS Fake<br/>- HTTP WS Fake<br/><br/><br/><br/><br/><br/> |
+| Vmess:<br/>- TLS WS<br/>- TLS TCP<br/>- HTTP WS<br/>- HTTP TCP<br/>- TLS gRPC<br/>- TLS H2 WS<br/>- TLS H2 TCP<br/> | Vmess:<br/>- TLS WS<br/>- TLS gRPC<br/>- HTTP WS<br/>- TLS H2 WS<br/>- TLS H2 gRPC<br/><br/><br/> | Vmess:<br/>- TLS WS Fake<br/>- HTTP WS Fake<br/><br/><br/><br/><br/><br/> |
+| V2ray:<br/>- TLS WS<br/>- HTTP WS<br/>- TLS H2                                                                      | V2ray:<br/>- TLS WS<br/>- HTTP WS<br/>- TLS H2                                                    |                                                                           |
+| Shadowsocks:<br/>- TLS Shadowtls<br/>- HTTP Shadowtls<br/>- TLS H2 Shadowtls                                        |                                                                                                   |                                                                           |
 
-- **Vless**
-
-  - XTLS
-  - WS TLS
-  - GRPC TLS
-  - H2 TLS
-  - HTTP
-
-- **Trojan**
-
-  - WS TLS
-  - GRPC TLS
-  - H2 TLS
-  - HTTP 1.1
-
-- **Vmess**
-
-  - WS TLS
-  - GRPC TLS
-  - H2 TLS
-  - HTTP 1.1
-  - HTTP
-
-- **Shadowsocks**
-- **DNS over HTTPs**
+</details>
 
 ### Other Features
 

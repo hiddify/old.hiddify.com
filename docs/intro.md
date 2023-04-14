@@ -13,7 +13,7 @@ title: معرفی
 
 هیدیفای تلفیقی از دو کلمه مخفی و ساده سازی است. پنلی با ويژگی های فراوان با تعداد قابل توجهی از قابلیت ها که به شما کمک می کند با خیالی راحت و آسوده از اینترنت آزاد بهره ببرید.
 
-### امکانات هیدیفای
+### ویژگی‌های جذاب
 
 - نصب سریع
 - پروکسی هوشمند (کلاینت هیدیفای و کلش)
@@ -27,44 +27,22 @@ title: معرفی
 - صفحات اختصاصی کاربران برای مشاهده مصرف و کانفیگ‌ها
 - کانفیگ های اختصاصی و هوشمند
 - نرم‌افزار‌های کلاینت اختصاصی
+- پروکسی تلگرام با استفاده از کتابخانه های مختلف
+- DNS بر روی HTTPS یا DoH
+- و ده ها قابلیت دیگر که بعد از نصب متوجه آن می‌شوید.
 
-### کانفیگ‌های پشتیبانی شده
+<details markdown="1"> <summary>پروتکل‌های پشتیبانی شده</summary>
 
-- **Telegram Proxy**
+| پروتکل‌های پشتیبانی شده                                                                                             | پروتکل‌های پشتیبانی شده                                                                           | پروتکل‌های پشتیبانی شده                                                   |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| **دایرکت**                                                                                                          | **CDN**                                                                                           | **دامین فرانتینگ**                                                        |
+| Trojan:<br/>- TLS WS<br/>- TLS TCP<br/>- TLS gRPC<br/>- TLS H2 WS<br/>- TLS H2 TCP<br/>- TLS H2 gRPC<br/>           | Trojan:<br/>- TLS WS<br/>- TLS gRPC<br/>- TLS H2 WS<br/>- TLS H2 gRPC<br/><br/><br/>              | Trojan:<br/>- TLS WS Fake<br/><br/><br/><br/><br/><br/>                   |
+| Vless:<br/>- TLS WS<br/>- HTTP WS<br/>- TLS XTLS<br/>- TLS gRPC<br/>- TLS H2 TLS<br/>- TLS H2 WS<br/>- TLS H2 gRPC  | Vless:<br/>- TLS WS<br/>- TLS gRPC<br/>- HTTP WS<br/>- TLS H2 WS<br/>- TLS H2 gRPC<br/><br/><br/> | Vless:<br/>- TLS WS Fake<br/>- HTTP WS Fake<br/><br/><br/><br/><br/><br/> |
+| Vmess:<br/>- TLS WS<br/>- TLS TCP<br/>- HTTP WS<br/>- HTTP TCP<br/>- TLS gRPC<br/>- TLS H2 WS<br/>- TLS H2 TCP<br/> | Vmess:<br/>- TLS WS<br/>- TLS gRPC<br/>- HTTP WS<br/>- TLS H2 WS<br/>- TLS H2 gRPC<br/><br/><br/> | Vmess:<br/>- TLS WS Fake<br/>- HTTP WS Fake<br/><br/><br/><br/><br/><br/> |
+| V2ray:<br/>- TLS WS<br/>- HTTP WS<br/>- TLS H2                                                                      | V2ray:<br/>- TLS WS<br/>- HTTP WS<br/>- TLS H2                                                    |                                                                           |
+| Shadowsocks:<br/>- TLS Shadowtls<br/>- HTTP Shadowtls<br/>- TLS H2 Shadowtls                                        |                                                                                                   |                                                                           |
 
-- **Vless**
-
-  - XTLS
-  - WS TLS
-  - GRPC TLS
-  - H2 TLS
-  - HTTP
-
-- **Trojan**
-
-  - WS TLS
-  - GRPC TLS
-  - H2 TLS
-  - HTTP 1.1
-
-- **Vmess**
-
-  - WS TLS
-  - GRPC TLS
-  - H2 TLS
-  - HTTP 1.1
-  - HTTP
-
-- **Shadowsocks**
-- **DNS over HTTPs**
-
-<!-- ### پروکسی هوشمند
-
-با استفاده از کلاینت کلش و پنل هیدیفای می‌تونین در ۳ حالت به اینترنت وصل بشید.
-
-1. روش اول فقط سایت فیلترشده را از فیلترشکن عبور دهد.
-2. فقط سایت های ایرانی بدون فیلترشکن باز شود (پیشنهادی)
-3. تمام سایت ها از فیلترشکن عبور کنند -->
+</details>
 
 ### سایر امکانات
 
