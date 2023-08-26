@@ -12,7 +12,7 @@ Crash Data is transmitted via Crashlytics and Google Firebase without any sensit
 
 
 # 1. Data Collection
-1.1 Sensitive Information
+## 1.1 We do not Collect Sensitive Information
 We do not gather and even has access to the following information:
 - Names (including subscriber names, usernames, and screen names)
 - Addresses (residential and business)
@@ -27,7 +27,7 @@ No logs are collected on online activities such as:
 - Data content
 - DNS queries
 
-1.2 Data Collection
+## 1.2 Data Collection
 This app need a private server from your side and we do not provide any server. So We do not gather any information from you.
 Crash Data is transmitted via Crashlytics and Google Firebase without any sensitive data. 
 
@@ -43,32 +43,32 @@ It includes the following:
 - Operation System Version
 - App Version
 - Connection Status (TCP ping)
-- 
-1.3 App Permissions
+  
+## 1.3 App Permissions
 The app does not need any permissions to access your phone’s contacts, location, device id, storage, microphone, camera, etc.
 
-2. Data Usage
+# 2. Data Usage
 Data is used for:
 -  We do no collect any data, so we do not use it :D
 -  Crash Data is transmitted via Crashlytics and Google Firebase without any sensitive data.
 
-3. Data Sharing and Transfer
+# 3. Data Sharing and Transfer
 We do not share any data with the any third parties.
 
-4. Security Measures
+# 4. Security Measures
 Strong security measures implemented to protect data. Staff access limited.
 
-5. Data Retention
+# 5. Data Retention
 We do no collect any data, so it is not related to us.
 
-6. Right to Be Forgotten
+# 6. Right to Be Forgotten
 We do no collect any data, so it is not related to us.
 
-8. Third Party Services
+# 7. Third Party Services
 Hiddify is designed to be used with your own deployed server. However, in case of using third party vpn services in our application, you should check their policies.
 
-10. Advertising
+# 8. Advertising
 We do not have any advertising
 
-12. Children’s Privacy
+# 9. Children’s Privacy
 Parents encouraged to teach children about online privacy.
