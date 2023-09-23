@@ -7,7 +7,7 @@ title: Privacy Policy
 ## Summary:
 We do not gather any information from you. This app need a private server from you and we do not provide any server.
 
-Crash Data is transmitted via Crashlytics and Google Firebase without any sensitive data. 
+Crash Data is transmitted via Sentry (for HiddifyNext) or Crashlytics (for HiddifyNG) and Google Firebase without any sensitive data. 
 
 
 
