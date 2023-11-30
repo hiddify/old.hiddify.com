@@ -29,7 +29,8 @@ Hiddify is a mixture of hidden and simplify. A feature-full panel with a wide ra
 - Dedicated client software
 - And dozens of other features that you will notice after installation
 
-<details markdown="1"> <summary>Supported protocols</summary>
+<details markdown="1">
+<summary>Supported protocols</summary>
 
 | Supported Configs                                                                                                   | Supported Configs                                                                                 | Supported Configs                                                         |
 | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
