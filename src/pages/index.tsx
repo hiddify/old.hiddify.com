@@ -1,13 +1,12 @@
 import React, { HTMLProps, ReactElement, ReactNode } from "react";
-import clsx from "clsx";
-import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
-import Translate from "@docusaurus/Translate";
+import { Disclosure, Transition } from "@headlessui/react";
+import { twMerge } from "tailwind-merge";
 
+import Layout from "@theme/Layout";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Link from "@docusaurus/Link";
+import Translate from "@docusaurus/Translate";
 import useBaseUrl from "@docusaurus/useBaseUrl";
-import Container from "../components/container";
 
 import AndroidSVG from "@site/static/icons/Android.svg";
 import LinuxSVG from "@site/static/icons/linux.svg";
@@ -15,7 +14,10 @@ import MacosSVG from "@site/static/icons/MacOS-Finder.svg";
 import WindowsSVG from "@site/static/icons/microsoft-windows.svg";
 import AppleSVG from "@site/static/icons/Apple.svg";
 import UbuntuSVG from "@site/static/icons/ubuntu.svg";
-import { twMerge } from "tailwind-merge";
+import MinusSVG from "@site/static/icons/Minus.svg";
+import PlusSVG from "@site/static/icons/Plus.svg";
+
+import Container from "../components/container";
 
 const stats = [
   { id: 1, name: "Panel download", value: "8,000+" },
@@ -54,11 +56,11 @@ const faqs = [
 function Hero() {
   return (
     <header>
-      <Container className="my-36 flex flex-col items-center ">
-        <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-200 sm:text-5xl lg:text-6xl">
+      <Container className="my-36 flex flex-col items-center lg:my-52 ">
+        <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-5xl lg:text-6xl">
           <Translate id="homepage.main_heading_title" />
         </h1>
-        <h4 className="mx-auto mt-4 max-w-2xl text-center text-xl text-gray-700 dark:text-gray-300">
+        <h4 className="mx-auto mt-4 max-w-2xl text-center text-xl font-medium tracking-wide text-gray-700 rtl:tracking-normal dark:text-gray-200">
           <Translate id="homepage.main_heading_subtitle" />
         </h4>
       </Container>
@@ -114,19 +116,19 @@ function HiddifyClient() {
       <>
         <div className="mt-6 flex w-full justify-between gap-6 sm:justify-center sm:gap-10 lg:gap-10">
           <IconWrapper title="Android">
-            <AndroidSVG className="h-12 w-12" />
+            <AndroidSVG className="h-12 w-12" aria-hidden="true" />
           </IconWrapper>
           <IconWrapper title="IOS">
-            <AppleSVG className="h-12 w-12" />
+            <AppleSVG className="h-12 w-12" aria-hidden="true" />
           </IconWrapper>
           <IconWrapper title="Windows">
-            <WindowsSVG className="h-12 w-12" />
+            <WindowsSVG className="h-12 w-12" aria-hidden="true" />
           </IconWrapper>
           <IconWrapper title="Linux">
-            <LinuxSVG className="h-12 w-12" />
+            <LinuxSVG className="h-12 w-12" aria-hidden="true" />
           </IconWrapper>
           <IconWrapper title="MacOS">
-            <MacosSVG className="h-12 w-12" />
+            <MacosSVG className="h-12 w-12" aria-hidden="true" />
           </IconWrapper>
         </div>
 
@@ -218,7 +220,7 @@ function WhatIsHiddify() {
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
               What is Hiddify?
             </h2>
-            <p className="mx-auto mt-6 max-w-2xl text-start text-lg leading-8 text-indigo-200">
+            <p className="mx-auto mt-6 max-w-2xl text-start text-lg leading-8 text-indigo-100">
               Hiddify-Manager is a powerful and professional anti-censorship toolbox, which is a
               multi-user panel with an effortless installation and supporting more than 20 protocols
               including Reality and Telegram proxy to circumvent filtering. It's optimized for
@@ -262,33 +264,41 @@ function Impact() {
 
 function FAQ() {
   return (
-    <div className="bg-white">
-      <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">
+    <Container>
+      <div className="mx-auto max-w-7xl  py-24 sm:py-32  lg:py-40">
+        <div className="mx-auto max-w-4xl divide-y divide-gray-900/10">
+          <h2 className="text-center text-3xl font-bold leading-10 tracking-tight text-gray-900 dark:text-gray-50">
             Frequently asked questions
           </h2>
-          <p className="mt-6 text-base leading-7 text-gray-600">
-            Have a different question and can’t find the answer you’re looking for? Reach out to our
-            support team by{" "}
-            <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
-              sending us an email
-            </a>{" "}
-            and we’ll get back to you as soon as we can.
-          </p>
-        </div>
-        <div className="mt-20">
-          <dl className="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:gap-x-10">
+          <dl className="mt-10 space-y-6 divide-y divide-gray-900 dark:divide-gray-400">
             {faqs.map((faq) => (
-              <div key={faq.id}>
-                <dt className="text-base font-semibold leading-7 text-gray-900">{faq.question}</dt>
-                <dd className="m-0 mt-2 text-base leading-7 text-gray-600">{faq.answer}</dd>
-              </div>
+              <Disclosure as="div" key={faq.question} className="pt-6">
+                {({ open }) => (
+                  <>
+                    <dt>
+                      <Disclosure.Button className="box-border flex w-full  items-start justify-between border-0 bg-transparent p-0 text-left text-inherit ">
+                        <span className="text-lg/7 font-medium ">{faq.question}</span>
+                        <span className="ml-6 flex h-7 items-center">
+                          {open ? (
+                            <MinusSVG className="h-6 w-6" aria-hidden="true" />
+                          ) : (
+                            <PlusSVG className="h-6 w-6" aria-hidden="true" />
+                          )}
+                        </span>
+                      </Disclosure.Button>
+                    </dt>
+
+                    <Disclosure.Panel as="dd" className="m-0 mt-2 pr-12">
+                      <p className="text-base/7 text-gray-700 dark:text-gray-200">{faq.answer}</p>
+                    </Disclosure.Panel>
+                  </>
+                )}
+              </Disclosure>
             ))}
           </dl>
         </div>
       </div>
-    </div>
+    </Container>
   );
 }
 
