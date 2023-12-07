@@ -187,7 +187,7 @@ function HiddifyServer() {
         <>
           <Link className={"hover:no-underline"} tabIndex={-1} to="#">
             <Button className="flex items-center gap-2">
-              Set UP <UbuntuSVG />
+              Setup <UbuntuSVG />
             </Button>
           </Link>
           <Link tabIndex={-1} to="#">
