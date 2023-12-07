@@ -5,7 +5,7 @@ import { themes } from "prism-react-renderer";
 
 const config: Config = {
   title: "Hiddify",
-  tagline: "ابزار حرفه‌ای و قدرتمند ضدسانسور",
+  tagline: "A Powerful and Professional Anti-censorship Toolbox",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -26,9 +26,22 @@ const config: Config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "fa",
+    defaultLocale: "en",
     locales: ["fa", "en"],
   },
+  plugins: [
+    async function tailwind(context, options) {
+      return {
+        name: "docusaurus-tailwindcss",
+        configurePostCss(postcssOptions) {
+          // Appends TailwindCSS and AutoPrefixer.
+          postcssOptions.plugins.push(require("tailwindcss"));
+          postcssOptions.plugins.push(require("autoprefixer"));
+          return postcssOptions;
+        },
+      };
+    },
+  ],
 
   presets: [
     [
@@ -57,7 +70,7 @@ const config: Config = {
     // Replace with your project's social card
     image: "img/social-card.jpg",
     navbar: {
-      title: "هیدیفای",
+      title: "Hiddify",
       logo: {
         alt: "Hiddify logo",
         src: "img/logo.png",
@@ -67,7 +80,7 @@ const config: Config = {
           type: "doc",
           docId: "intro",
           position: "left",
-          label: "آموزش",
+          label: "Docs",
         },
         // { to: "/blog", label: "Blog", position: "left" },
         {

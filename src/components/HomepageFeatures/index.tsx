@@ -18,8 +18,8 @@ const FeatureList: FeatureItem[] = [
     imageSRC: require("@site/static/img/feature_anti-censorship.png").default,
     description: (
       <Translate id="homepage.featureList_description_1">
-        پشتیبانی از پروتکلهای Vmess, Vless, Trojan, Telegram, MTProto, Xray و با
-        قابلیت کانفیگ آیپی خودکار برای کلادفلر
+        پشتیبانی از پروتکلهای Vmess, Vless, Trojan, Telegram, MTProto, Xray و با قابلیت کانفیگ آیپی
+        خودکار برای کلادفلر
       </Translate>
     ),
   },
@@ -31,8 +31,8 @@ const FeatureList: FeatureItem[] = [
     imageSRC: require("@site/static/img/feature_smart-proxy.png").default,
     description: (
       <Translate id="homepage.featureList_description_2">
-        پنل گذر از فیلترینگ با امکان نصب سریع به همراه پروکسی هوشمند برای اتصال
-        به اینترنت در سه حالت مختلف
+        پنل گذر از فیلترینگ با امکان نصب سریع به همراه پروکسی هوشمند برای اتصال به اینترنت در سه
+        حالت مختلف
       </Translate>
     ),
   },
@@ -44,8 +44,7 @@ const FeatureList: FeatureItem[] = [
     imageSRC: require("@site/static/img/feature_user-management.png").default,
     description: (
       <Translate id="homepage.featureList_description_3">
-        قابلیت افزودن و مدیریت کاربران و اعمال محدودیت زمان و حجم استفاده شده در
-        سرورهای مختلف
+        قابلیت افزودن و مدیریت کاربران و اعمال محدودیت زمان و حجم استفاده شده در سرورهای مختلف
       </Translate>
     ),
   },
