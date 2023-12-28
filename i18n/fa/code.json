@@ -1,4 +1,25 @@
 {
+  "android": {
+    "message": "اندروید"
+  },
+  "windows": {
+    "message": "ویندوز"
+  },
+  "macos": {
+    "message": "مک"
+  },
+  "linux": {
+    "message": "لینوکس"
+  },
+  "ios": {
+    "message": "آی او اس"
+  },
+  "read_more": {
+    "message": "بیشتر بخوانید"
+  },
+  "download": {
+    "message": "دانلود"
+  },
   "homepage.main_heading_title": {
     "message": "هیدیفای٬ برای یک اینترنت آزاد"
   },
@@ -25,6 +46,84 @@
   },
   "homepage.featureList_description_3": {
     "message": "قابلیت افزودن و مدیریت کاربران و اعمال محدودیت زمان و حجم استفاده شده در سرورهای مختلف"
+  },
+  "homepage.hiddify_client_title": {
+    "message": "برنامه هیدیفای"
+  },
+  "homepage.hiddify_client_description": {
+    "message": "برنامه ای برای هر محیطی"
+  },
+  "homepage.hiddify_client_description_2": {
+    "message": "از آخرین پروتکل ها استفاده می کند:"
+  },
+  "homepage.hiddify_client_description_3": {
+    "message": "Hysteria2, TUICv5, SSH, Reality, VMess و موارد دیگر"
+  },
+  "homepage.hiddify_manager_title": {
+    "message": "مدیریت هیدیفای"
+  },
+  "homepage.hiddify_manager_description": {
+    "message": "سرور VPN خود را بسازید"
+  },
+  "homepage.hiddify_manager_description_2": {
+    "message": "خدمات VPN را برای گروه خود ارائه دهید"
+  },
+  "homepage.hiddify_manager_description_3": {
+    "message": "پشتیبانی از آخرین پروتکل ها:"
+  },
+  "homepage.hiddify_manager_description_4": {
+    "message": "Hysteria2, TUICv5, SSH, Reality, VMess و موارد دیگر"
+  },
+  "homepage.hiddify_manager_setup_button": {
+    "message": "نصب"
+  },
+  "homepage.impact_title": {
+    "message": "تاثیر هیدیفای در اعداد"
+  },
+  "homepage.impact_statics_1": {
+    "message": "دانلود مدیریت"
+  },
+  "homepage.impact_statics_2": {
+    "message": "دانلود برنامه"
+  },
+  "homepage.impact_statics_3": {
+    "message": "مزیت"
+  },
+  "homepage.impact_statics_4": {
+    "message": "مشارکت کنندگان"
+  },
+  "homepage.what_is_hiddify": {
+    "message": "هیدیفای چیست؟"
+  },
+  "homepage.what_is_hiddify_description": {
+    "message": "مدیریت هیدیفای یک جعبه ابزار قدرتمند و حرفه ای ضد سانسور است که یک پنل چند کاربره با نصب آسان و پشتیبانی از بیش از 20 پروتکل از جمله Reality و پراکسی تلگرام برای دور زدن فیلترینگ است. این برای دور زدن سانسور در چین، روسیه و ایران بهینه شده است و توسط Xray توصیه شده است. این یک جایگزین عالی برای پانل X-Ul است."
+  },
+  "homepage.faq_title": {
+    "message": "سوالات متداول"
+  },
+  "homepage.faq_faqs_1_title": {
+    "message": "بهترین چیز در مورد سوئیس چیست؟"
+  },
+  "homepage.faq_faqs_1_answer": {
+    "message": "من نمی دانم، اما پرچم یک امتیاز بزرگ است. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ"
+  },
+  "homepage.faq_faqs_2_title": {
+    "message": "بهترین چیز در مورد سوئیس چیست؟"
+  },
+  "homepage.faq_faqs_2_answer": {
+    "message": "من نمی دانم، اما پرچم یک امتیاز بزرگ است. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ"
+  },
+  "homepage.faq_faqs_3_title": {
+    "message": "بهترین چیز در مورد سوئیس چیست؟"
+  },
+  "homepage.faq_faqs_3_answer": {
+    "message": "من نمی دانم، اما پرچم یک امتیاز بزرگ است. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ"
+  },
+  "homepage.faq_faqs_4_title": {
+    "message": "بهترین چیز در مورد سوئیس چیست؟"
+  },
+  "homepage.faq_faqs_4_answer": {
+    "message": "من نمی دانم، اما پرچم یک امتیاز بزرگ است. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ"
   },
   "theme.ErrorPageContent.title": {
     "message": "بارگذاری صفحه با خطا روبرو شد.",

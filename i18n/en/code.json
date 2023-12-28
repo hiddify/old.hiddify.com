@@ -1,4 +1,25 @@
 {
+  "android": {
+    "message": "Android"
+  },
+  "windows": {
+    "message": "Windows"
+  },
+  "macos": {
+    "message": "MacOS"
+  },
+  "linux": {
+    "message": "Linux"
+  },
+  "ios": {
+    "message": "IOS"
+  },
+  "read_more": {
+    "message": "Read More"
+  },
+  "download": {
+    "message": "Download"
+  },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
     "description": "The title of the fallback page when the page crashed"
@@ -296,5 +317,83 @@
   },
   "homepage.featureList_description_3": {
     "message": "The ability to add and manage users and limit the time and traffic used on different servers"
+  },
+  "homepage.hiddify_client_title": {
+    "message": "Hiddify Client"
+  },
+  "homepage.hiddify_client_description": {
+    "message": "A Client for every environment"
+  },
+  "homepage.hiddify_client_description_2": {
+    "message": "Uses latest protocols:"
+  },
+  "homepage.hiddify_client_description_3": {
+    "message": "Hysteria2, TUICv5, SSH, Reality, VMess and more"
+  },
+  "homepage.hiddify_manager_title": {
+    "message": "Hiddify Manager"
+  },
+  "homepage.hiddify_manager_description": {
+    "message": "Build your own VPN Server"
+  },
+  "homepage.hiddify_manager_description_2": {
+    "message": "Provide VPN services for your group"
+  },
+  "homepage.hiddify_manager_description_3": {
+    "message": "Support latest protocols:"
+  },
+  "homepage.hiddify_manager_description_4": {
+    "message": "Hysteria2, TUICv5, SSH, Reality, VMess and more"
+  },
+  "homepage.hiddify_manager_setup_button": {
+    "message": "Setup"
+  },
+  "homepage.impact_title": {
+    "message": "Hiddify impact in numbers"
+  },
+  "homepage.impact_statics_1": {
+    "message": "Panel download"
+  },
+  "homepage.impact_statics_2": {
+    "message": "App Download"
+  },
+  "homepage.impact_statics_3": {
+    "message": "Advantage"
+  },
+  "homepage.impact_statics_4": {
+    "message": "Contributors"
+  },
+  "homepage.what_is_hiddify": {
+    "message": "What is Hiddify?"
+  },
+  "homepage.what_is_hiddify_description": {
+    "message": "Hiddify-Manager is a powerful and professional anti-censorship toolbox, which is a multi-user panel with an effortless installation and supporting more than 20 protocols including Reality and Telegram proxy to circumvent filtering. It's optimized for censorship circumvention in China, Russia and Iran and Recommended by Xray. It's a great replacement of X-Ul panel."
+  },
+  "homepage.faq_title": {
+    "message": "Frequently asked questions"
+  },
+  "homepage.faq_faqs_1_title": {
+    "message": "What's the best thing about Switzerland?"
+  },
+  "homepage.faq_faqs_1_answer": {
+    "message": "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat."
+  },
+  "homepage.faq_faqs_2_title": {
+    "message": "What's the best thing about Switzerland?"
+  },
+  "homepage.faq_faqs_2_answer": {
+    "message": "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat."
+  },
+  "homepage.faq_faqs_3_title": {
+    "message": "What's the best thing about Switzerland?"
+  },
+  "homepage.faq_faqs_3_answer": {
+    "message": "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat."
+  },
+  "homepage.faq_faqs_4_title": {
+    "message": "What's the best thing about Switzerland?"
+  },
+  "homepage.faq_faqs_4_answer": {
+    "message": "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat."
   }
 }
