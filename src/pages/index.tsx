@@ -1,4 +1,4 @@
-import React, { ReactElement, ReactNode } from "react";
+import React, { ReactElement, useEffect, useState } from "react";
 import Layout from "@theme/Layout";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Disclosure from "../components/Disclosure";
@@ -28,6 +28,27 @@ const IconWrapper = ({ title, children }: IconWrapperProps) => {
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
+
+  const [platformText, setPlatformText] = useState("");
+
+  useEffect(() => {
+    // Detect the user's platform
+    const platform = navigator.platform.toLowerCase();
+
+    if (platform.includes("android")) {
+      setPlatformText("Android");
+    } else if (
+      platform.includes("iphone") ||
+      platform.includes("ipad") ||
+      platform.includes("ios")
+    ) {
+      setPlatformText("iOS");
+    } else if (platform.includes("win")) {
+      setPlatformText("Windows");
+    } else if (platform.includes("mac")) {
+      setPlatformText("MacOS");
+    }
+  }, []);
   return (
     <Layout noFooter={true} title="Hiddify" description="Hiddify, for a free internet">
       <main className="px-4 py-28 text-gray-600 md:px-14 dark:text-gray-300">
@@ -88,7 +109,7 @@ export default function Home(): JSX.Element {
                 rel="noopener noreferrer"
                 className="inline-flex rounded border-0 bg-gray-200 px-6 py-2 text-lg text-gray-700 hover:bg-indigo-500 hover:text-white focus:outline-none"
               >
-                Download
+                Download for {platformText}
               </a>
               <button className="ml-4 inline-flex rounded border-0 bg-gray-200 px-6 py-2 text-lg text-gray-700 hover:bg-gray-300 focus:outline-none">
                 Read more
