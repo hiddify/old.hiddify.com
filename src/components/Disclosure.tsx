@@ -5,7 +5,7 @@ export default function Disclosure({ title, children }: { title: string; childre
   const [isOpen, setIsOpen] = useState(false);
   return (
     <li
-      className="mt-4 cursor-pointer rounded-md bg-white p-5 md:text-xl"
+      className="mt-4 cursor-pointer rounded-md bg-[#FFFFFF] p-5 shadow-md md:text-xl"
       onClick={() => setIsOpen(!isOpen)}
     >
       <div className="flex items-center justify-between">

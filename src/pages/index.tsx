@@ -26,33 +26,43 @@ const IconWrapper = ({ title, children }: IconWrapperProps) => {
   );
 };
 
-export default function Home(): JSX.Element {
-  const { siteConfig } = useDocusaurusContext();
+function detectOS(): string {
+  let userAgent = window.navigator.userAgent,
+    platform = window.navigator.platform,
+    macosPlatforms = ["Macintosh", "MacIntel", "MacPPC", "Mac68K"],
+    windowsPlatforms = ["Win32", "Win64", "Windows", "WinCE"],
+    iosPlatforms = ["iPhone", "iPad", "iPod"],
+    os = null;
 
+  if (macosPlatforms.indexOf(platform) !== -1) {
+    os = "Mac OS";
+  } else if (iosPlatforms.indexOf(platform) !== -1) {
+    os = "iOS";
+  } else if (windowsPlatforms.indexOf(platform) !== -1) {
+    os = "Windows";
+  } else if (/Android/.test(userAgent)) {
+    os = "Android";
+  } else if (!os && /Linux/.test(platform)) {
+    os = "Linux";
+  }
+
+  return os;
+}
+
+export default function Home(): JSX.Element {
   const [platformText, setPlatformText] = useState("");
 
   useEffect(() => {
-    // Detect the user's platform
-    const platform = navigator.platform.toLowerCase();
-
-    if (platform.includes("android")) {
-      setPlatformText("Android");
-    } else if (
-      platform.includes("iphone") ||
-      platform.includes("ipad") ||
-      platform.includes("ios")
-    ) {
-      setPlatformText("iOS");
-    } else if (platform.includes("win")) {
-      setPlatformText("Windows");
-    } else if (platform.includes("mac")) {
-      setPlatformText("MacOS");
-    }
+    setPlatformText(detectOS());
   }, []);
   return (
     <Layout noFooter={true} title="Hiddify" description="Hiddify, for a free internet">
-      <main className="px-4 py-28 text-gray-600 md:px-14 dark:text-gray-300">
-        <h1 className="text-center text-7xl font-bold text-black md:text-8xl lg:text-9xl dark:text-white ">
+      <div className="absolute left-72 top-40 -z-10 h-[500px] w-[500px] animate-blob rounded-full bg-purple-300 opacity-30 mix-blend-multiply  blur-3xl filter "></div>
+      <div className="animation-delay-2000 animat left-82 absolute top-72 -z-10 h-[500px] w-[500px] animate-blob rounded-full bg-pink-300 opacity-30 mix-blend-multiply  blur-3xl filter"></div>
+      <div className="animation-delay-4000 absolute  left-56 top-40 -z-10  h-[500px] w-[500px] animate-blob rounded-full bg-blue-300 opacity-30 mix-blend-multiply  blur-3xl filter"></div>
+
+      <main className="relative px-4 py-28 text-gray-600 dark:text-gray-300 md:px-14">
+        <h1 className="text-center text-6xl font-semibold text-black dark:text-white md:text-7xl lg:text-8xl ">
           Hiddify, for a free internet
         </h1>
         <p className="mx-auto mt-5 max-w-[604px] text-center text-2xl">
@@ -63,15 +73,15 @@ export default function Home(): JSX.Element {
 
       <section className="my-52 text-gray-600 dark:text-gray-300">
         <div className="container mx-auto flex flex-col items-center px-5 py-24 md:flex-row">
-          <div className="mb-10 w-5/6 md:mb-0 md:w-1/2 lg:w-full lg:max-w-lg">
+          <div className=" w-full max-w-[600px]">
             <img
-              className="object-fit rounded object-center"
-              alt="hero"
+              className="h-full w-full rounded object-contain"
+              alt="hiddify next"
               src="/img/git-en-reedit.png"
             />
           </div>
           <div className="flex flex-col text-center md:w-1/2 md:items-start md:pl-16 md:text-left lg:flex-grow  lg:pl-24">
-            <h1 className="title-font mb-4 text-3xl font-medium text-gray-900 sm:text-4xl dark:text-gray-50">
+            <h1 className="title-font mb-4 text-3xl font-medium text-gray-900 dark:text-gray-50 sm:text-4xl">
               Hiddify
             </h1>
             <p className="mb-4 text-xl leading-relaxed text-black dark:text-white">
@@ -107,11 +117,11 @@ export default function Home(): JSX.Element {
                 target="_blank"
                 tabIndex={-1}
                 rel="noopener noreferrer"
-                className="inline-flex rounded border-0 bg-gray-200 px-6 py-2 text-lg text-gray-700 hover:bg-indigo-500 hover:text-white focus:outline-none"
+                className="inline-flex rounded border-0 bg-[#B8C7F4] px-6 py-2 text-lg text-gray-700 hover:bg-indigo-500 hover:text-white focus:outline-none"
               >
                 Download for {platformText}
               </a>
-              <button className="ml-4 inline-flex rounded border-0 bg-gray-200 px-6 py-2 text-lg text-gray-700 hover:bg-gray-300 focus:outline-none">
+              <button className="ml-4 inline-flex rounded border-0 bg-[#B8C7F4]  px-6 py-2 text-lg text-gray-700 hover:bg-gray-300 focus:outline-none">
                 Read more
               </button>
             </div>
@@ -120,14 +130,15 @@ export default function Home(): JSX.Element {
       </section>
 
       <section className="body-font text-gray-600 dark:text-gray-300">
-        <div className="container mx-auto flex flex-col items-center px-5 py-24 md:flex-row">
+        <div className="container  mx-auto flex flex-col items-center px-8 py-24 md:flex-row">
           <div className="mb-16 flex flex-col items-center text-center md:mb-0 md:w-1/2 md:items-start md:pr-16 md:text-left lg:flex-grow lg:pr-24">
-            <h1 className="title-font mb-4 text-3xl font-medium text-gray-900 sm:text-4xl dark:text-gray-50">
+            <h2 className="mb-4 text-xl font-semibold leading-relaxed text-black dark:text-white">
+              Build your own VPN Server
+            </h2>
+            <h1 className="title-font mb-4 text-3xl font-medium text-gray-900 dark:text-gray-50 sm:text-4xl">
               Hiddify Manager
             </h1>
             <p className="mb-4 text-xl leading-relaxed text-black dark:text-white">
-              Build your own VPN Server
-              <br></br>
               Provide VPN services for your group
             </p>
 
@@ -146,10 +157,10 @@ export default function Home(): JSX.Element {
               </button>
             </div>
           </div>
-          <div className="w-5/6 md:w-1/2 lg:w-full lg:max-w-lg">
+          <div className="w-full max-w-[700px]">
             <img
-              className="rounded object-cover object-center"
-              alt="hero"
+              className="h-full w-full rounded object-fill"
+              alt="Hiddify Manager"
               src="/img/234265624-36ee0a18-d4e8-4803-a9ad-331a7c5998e3.png"
             />
           </div>
@@ -158,7 +169,7 @@ export default function Home(): JSX.Element {
 
       <section className="body-font my-20 text-gray-600 dark:text-gray-300">
         <div className="container mx-auto flex flex-col px-5 py-24 md:flex-row ">
-          <h2 className="text-4xl font-bold text-black md:w-1/3 dark:text-white">
+          <h2 className="text-4xl font-bold text-black dark:text-white md:w-1/3">
             What is Hiddify?
           </h2>
           <p className="mt-4 text-xl md:w-1/2">
@@ -181,7 +192,7 @@ export default function Home(): JSX.Element {
               <img
                 alt="team"
                 className="object-fit mb-4 h-56 w-full flex-shrink-0 rounded-lg object-center"
-                src="/img/undraw_progressive_app_m-9-ms.svg"
+                src="https://dummyimage.com/300x200"
               />
               <h3 className="mt-2 text-center text-2xl font-bold text-black dark:text-white">
                 Cross Platform
@@ -194,7 +205,7 @@ export default function Home(): JSX.Element {
               <img
                 alt="team"
                 className="object-fit mb-4 h-56 w-full flex-shrink-0 rounded-lg object-center"
-                src="/img/undraw_connected_world_wuay.svg"
+                src="https://dummyimage.com/300x200"
               />
               <h3 className="mt-2 text-center text-2xl font-bold text-black dark:text-white">
                 Decentralized
@@ -205,7 +216,7 @@ export default function Home(): JSX.Element {
               <img
                 alt="team"
                 className="object-fit mb-4 h-56 w-full flex-shrink-0 rounded-lg object-center"
-                src="/img/undraw_maintenance_re_59vn.svg"
+                src="https://dummyimage.com/300x200"
               />
               <h3 className="mt-2 text-center  text-2xl font-bold text-black dark:text-white">
                 Open-Source and Free
@@ -252,12 +263,16 @@ export default function Home(): JSX.Element {
         </div>
       </section>
 
-      <section className="bg-gray-200 px-4 py-20 text-gray-600 md:px-14 dark:bg-gray-700 dark:text-gray-300">
+      <section className=" relative px-4 py-20 text-gray-600 dark:text-gray-300 md:px-14">
+        <div className="absolute bottom-0 right-72 -z-10 h-[500px] w-[500px] animate-blob rounded-full bg-purple-300 opacity-30 mix-blend-multiply  blur-3xl filter "></div>
+        <div className="animation-delay-2000 animat absolute bottom-72 right-2 -z-10 h-[500px] w-[500px] animate-blob rounded-full bg-pink-300 opacity-30 mix-blend-multiply  blur-3xl filter"></div>
+        <div className="animation-delay-4000 absolute  bottom-40 right-56 -z-10  h-[500px] w-[500px] animate-blob rounded-full bg-blue-300 opacity-30 mix-blend-multiply  blur-3xl filter"></div>
+
         <h2 className="text-center text-4xl font-bold text-black dark:text-white">
           Frequently asked questions
         </h2>
 
-        <ul className="mx-auto mt-20 max-w-5xl list-none flex-col md:w-[600px]">
+        <ul className=" relative mx-auto mt-20 max-w-5xl list-none flex-col md:w-[600px]">
           {[
             {
               question: "What is Hiddify?",
@@ -297,7 +312,7 @@ export default function Home(): JSX.Element {
         </ul>
       </section>
 
-      <footer className="body-font bg-black text-gray-400">
+      <footer className="body-font bg-[#455FE9] text-gray-400">
         <div className="container mx-auto flex flex-col flex-wrap px-5 py-24 md:flex-row md:flex-nowrap md:items-center lg:items-start ">
           <div className="mx-auto w-64 flex-shrink-0 text-center md:mx-0 md:text-left">
             <a className="title-font flex items-center justify-center font-medium text-white md:justify-start">
@@ -318,7 +333,7 @@ export default function Home(): JSX.Element {
                   <a
                     href="https://app.hiddify.com/"
                     target="_blank"
-                    className="text-gray-400 hover:text-white"
+                    className="text-gray-200 hover:text-white"
                   >
                     IOS
                   </a>
@@ -327,7 +342,7 @@ export default function Home(): JSX.Element {
                   <a
                     href="https://app.hiddify.com/"
                     target="_blank"
-                    className="text-gray-400 hover:text-white"
+                    className="text-gray-200 hover:text-white"
                   >
                     Android
                   </a>
@@ -336,7 +351,7 @@ export default function Home(): JSX.Element {
                   <a
                     href="https://app.hiddify.com/"
                     target="_blank"
-                    className="text-gray-400 hover:text-white"
+                    className="text-gray-200 hover:text-white"
                   >
                     Windows
                   </a>
@@ -345,7 +360,7 @@ export default function Home(): JSX.Element {
                   <a
                     href="https://app.hiddify.com/"
                     target="_blank"
-                    className="text-gray-400 hover:text-white"
+                    className="text-gray-200 hover:text-white"
                   >
                     Mac
                   </a>
@@ -354,7 +369,7 @@ export default function Home(): JSX.Element {
                   <a
                     href="https://app.hiddify.com/"
                     target="_blank"
-                    className="text-gray-400 hover:text-white"
+                    className="text-gray-200 hover:text-white"
                   >
                     Chrome OS
                   </a>
@@ -364,7 +379,7 @@ export default function Home(): JSX.Element {
                   <a
                     href="https://app.hiddify.com/"
                     target="_blank"
-                    className="text-gray-400 hover:text-white"
+                    className="text-gray-200 hover:text-white"
                   >
                     Linux
                   </a>
@@ -379,7 +394,7 @@ export default function Home(): JSX.Element {
                 <li>
                   <Link
                     href="docs/installation/normal/ubuntu-installation"
-                    className="text-gray-400 hover:text-white"
+                    className="text-gray-200 hover:text-white"
                   >
                     Ubuntu
                   </Link>
@@ -387,14 +402,14 @@ export default function Home(): JSX.Element {
                 <li>
                   <Link
                     href="docs/installation/normal/docker-installation"
-                    className="text-gray-400 hover:text-white"
+                    className="text-gray-200 hover:text-white"
                   >
                     Docker
                   </Link>
                 </li>
                 <li>
                   <a
-                    className="text-gray-400 hover:text-white"
+                    className="text-gray-200 hover:text-white"
                     href="docs/installation/quick/quick-install-hetzner"
                   >
                     Hetzner
@@ -403,7 +418,7 @@ export default function Home(): JSX.Element {
                 <li>
                   <a
                     href="docs/installation/quick/quick-install-oracle-cloud"
-                    className="text-gray-400 hover:text-white"
+                    className="text-gray-200 hover:text-white"
                   >
                     Oracle Cloud
                   </a>
@@ -411,7 +426,7 @@ export default function Home(): JSX.Element {
                 <li>
                   <a
                     href="docs/installation/quick/quick-install-vultr"
-                    className="text-gray-400 hover:text-white"
+                    className="text-gray-200 hover:text-white"
                   >
                     Vultr
                   </a>
@@ -419,7 +434,7 @@ export default function Home(): JSX.Element {
                 <li>
                   <a
                     href="docs/installation/quick/quick-install-ovh"
-                    className="text-gray-400 hover:text-white"
+                    className="text-gray-200 hover:text-white"
                   >
                     OVH
                   </a>
@@ -432,12 +447,12 @@ export default function Home(): JSX.Element {
               </h2>
               <nav className="mb-10 list-none">
                 <li>
-                  <a className="text-gray-400 hover:text-white" href="https://t.me/hiddify">
+                  <a className="text-gray-200 hover:text-white" href="https://t.me/hiddify">
                     Telegram Support Group
                   </a>
                 </li>
                 <Link href="docs/intro">
-                  <a className="text-gray-400 hover:text-white">Docs</a>
+                  <a className="text-gray-200 hover:text-white">Docs</a>
                 </Link>
               </nav>
             </div>
@@ -448,7 +463,7 @@ export default function Home(): JSX.Element {
               <nav className="mb-10 list-none">
                 <li>
                   <a
-                    className="text-gray-400 hover:text-white"
+                    className="text-gray-200 hover:text-white"
                     href="https://twitter.com/hiddify_com"
                   >
                     Twitter (X)
@@ -456,24 +471,24 @@ export default function Home(): JSX.Element {
                 </li>
                 <li>
                   <a
-                    className="text-gray-400 hover:text-white"
+                    className="text-gray-200 hover:text-white"
                     href="https://www.youtube.com/@hiddify"
                   >
                     Youtube
                   </a>
                 </li>
                 <li>
-                  <a className="text-gray-400 hover:text-white">Instagram</a>
+                  <a className="text-gray-200 hover:text-white">Instagram</a>
                 </li>
                 <li>
-                  <a className="text-gray-400 hover:text-white" href="https://t.me/hiddify">
+                  <a className="text-gray-200 hover:text-white" href="https://t.me/hiddify">
                     Telegram Channel
                   </a>
                 </li>
                 <li>
                   <a
                     href="https://github.com/hiddify/hiddify-config"
-                    className="text-gray-400 hover:text-white"
+                    className="text-gray-200 hover:text-white"
                   >
                     Github
                   </a>
@@ -482,9 +497,9 @@ export default function Home(): JSX.Element {
             </div>
           </div>
         </div>
-        <div className="bg-gray-900 bg-opacity-75">
-          <div className="container mx-auto flex flex-col flex-wrap px-5 py-4 sm:flex-row">
-            <p className="text-center text-sm text-gray-400 sm:text-left">
+        <div>
+          <div className="flex justify-center">
+            <p className="text-center text-sm text-gray-200 sm:text-left">
               © 2024 Hiddify team. All Rights Reserved
             </p>
           </div>
