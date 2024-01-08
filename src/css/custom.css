@@ -119,33 +119,43 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-
 button {
-font-family: Vazirmatn,
-  system-ui,
-  -apple-system,
-  Segoe UI,
-  Roboto,
-  Ubuntu,
-  Cantarell,
-  Noto Sans,
-  sans-serif,
-  BlinkMacSystemFont,
-  "Segoe UI",
-  Helvetica,
-  Arial,
-  sans-serif,
-  "Apple Color Emoji",
-  "Segoe UI Emoji",
-  "Segoe UI Symbol";
+  font-family:
+    Vazirmatn,
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Ubuntu,
+    Cantarell,
+    Noto Sans,
+    sans-serif,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol";
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
 
-@layer utilities{
-  .animation-delay-2000{
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@layer utilities {
+  .animation-delay-2000 {
     animation-delay: 2000ms;
   }
-  .animation-delay-4000{
+  .animation-delay-4000 {
     animation-delay: 4000ms;
   }
 }

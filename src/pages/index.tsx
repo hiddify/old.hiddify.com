@@ -57,12 +57,13 @@ export default function Home(): JSX.Element {
   }, []);
   return (
     <Layout noFooter={true} title="Hiddify" description="Hiddify, for a free internet">
-      <div className="absolute left-72 top-40 -z-10 h-[500px] w-[500px] animate-blob rounded-full bg-purple-300 opacity-30 mix-blend-multiply  blur-3xl filter "></div>
-      <div className="animation-delay-2000 animat left-82 absolute top-72 -z-10 h-[500px] w-[500px] animate-blob rounded-full bg-pink-300 opacity-30 mix-blend-multiply  blur-3xl filter"></div>
-      <div className="animation-delay-4000 absolute  left-56 top-40 -z-10  h-[500px] w-[500px] animate-blob rounded-full bg-blue-300 opacity-30 mix-blend-multiply  blur-3xl filter"></div>
+      <div className="clearfix absolute -z-10 h-full max-h-[500px] w-full max-w-[500px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-[30%] md:top-[15%] md:animate-blob "></div>
+      <div className="animation-delay-2000 animat clearfix absolute -z-10 h-full max-h-[500px] w-full max-w-[500px] bg-pink-300 opacity-30 mix-blend-multiply blur-3xl filter md:left-[40%] md:top-24 md:animate-blob"></div>
+      <div className="animation-delay-4000 clearfix absolute -z-10 h-full max-h-[500px]  w-full max-w-[500px] bg-blue-300 opacity-30 mix-blend-multiply blur-3xl filter md:left-[30%]  md:top-[20%] md:animate-blob"></div>
+      <div className="clearfix absolute -z-10 h-full max-h-[500px] w-full max-w-[500px] rounded-full bg-purple-300 opacity-30 mix-blend-multiply blur-3xl filter md:left-[20%]  md:top-[15%] md:animate-blob "></div>
 
-      <main className="relative px-4 py-28 text-gray-600 dark:text-gray-300 md:px-14">
-        <h1 className="text-center text-6xl font-semibold text-black dark:text-white md:text-7xl lg:text-8xl ">
+      <main className="relative px-4 py-28 text-gray-600 md:px-14 dark:text-gray-300">
+        <h1 className="text-center text-6xl font-semibold text-black md:text-7xl lg:text-8xl dark:text-white">
           Hiddify, for a free internet
         </h1>
         <p className="mx-auto mt-5 max-w-[604px] text-center text-2xl">
@@ -81,7 +82,7 @@ export default function Home(): JSX.Element {
             />
           </div>
           <div className="flex flex-col text-center md:w-1/2 md:items-start md:pl-16 md:text-left lg:flex-grow  lg:pl-24">
-            <h1 className="title-font mb-4 text-3xl font-medium text-gray-900 dark:text-gray-50 sm:text-4xl">
+            <h1 className="title-font mb-4 text-3xl font-medium text-gray-900 sm:text-4xl dark:text-gray-50">
               Hiddify
             </h1>
             <p className="mb-4 text-xl leading-relaxed text-black dark:text-white">
@@ -111,17 +112,17 @@ export default function Home(): JSX.Element {
               <br></br>
               Hysteria2, TUICv5, SSH, Reality, VMess and more
             </p>
-            <div className="mt-12 flex justify-center">
+            <div className="mt-12 flex justify-center gap-5">
               <a
                 href="https://app.hiddify.com/"
                 target="_blank"
                 tabIndex={-1}
                 rel="noopener noreferrer"
-                className="inline-flex rounded border-0 bg-[#B8C7F4] px-6 py-2 text-lg text-gray-700 hover:bg-indigo-500 hover:text-white focus:outline-none"
+                className="inline-flex rounded-md border-0 bg-[#B8C7F4] px-6 py-2 text-lg text-gray-700 hover:bg-indigo-500 hover:text-white focus:outline-none"
               >
                 Download for {platformText}
               </a>
-              <button className="ml-4 inline-flex rounded border-0 bg-[#B8C7F4]  px-6 py-2 text-lg text-gray-700 hover:bg-gray-300 focus:outline-none">
+              <button className="inline-flex rounded-md border-0 bg-[#B8C7F4] px-6 py-2 text-lg text-gray-700 hover:bg-indigo-500 hover:text-white focus:outline-none">
                 Read more
               </button>
             </div>
@@ -135,7 +136,7 @@ export default function Home(): JSX.Element {
             <h2 className="mb-4 text-xl font-semibold leading-relaxed text-black dark:text-white">
               Build your own VPN Server
             </h2>
-            <h1 className="title-font mb-4 text-3xl font-medium text-gray-900 dark:text-gray-50 sm:text-4xl">
+            <h1 className="title-font mb-4 text-3xl font-medium text-gray-900 sm:text-4xl dark:text-gray-50">
               Hiddify Manager
             </h1>
             <p className="mb-4 text-xl leading-relaxed text-black dark:text-white">
@@ -148,11 +149,11 @@ export default function Home(): JSX.Element {
               Hysteria2, TUICv5, SSH, Reality, VMess and more
             </p>
 
-            <div className="flex justify-center">
-              <button className="inline-flex rounded border-0 bg-gray-200 px-6 py-2 text-lg text-gray-700 hover:bg-indigo-500 hover:text-white focus:outline-none">
+            <div className="flex justify-center gap-5">
+              <button className="inline-flex rounded-md border-0 bg-gray-100 px-6 py-2 text-lg text-gray-700 hover:bg-gray-200 focus:outline-none">
                 Setup
               </button>
-              <button className="ml-4 inline-flex rounded border-0 bg-gray-200 px-6 py-2 text-lg text-gray-700 hover:bg-gray-300 focus:outline-none">
+              <button className="inline-flex rounded-md border-0 bg-gray-100 px-6 py-2 text-lg text-gray-700 hover:bg-gray-200 focus:outline-none">
                 Read more
               </button>
             </div>
@@ -169,7 +170,7 @@ export default function Home(): JSX.Element {
 
       <section className="body-font my-20 text-gray-600 dark:text-gray-300">
         <div className="container mx-auto flex flex-col px-5 py-24 md:flex-row ">
-          <h2 className="text-4xl font-bold text-black dark:text-white md:w-1/3">
+          <h2 className="text-4xl font-bold text-black md:w-1/3 dark:text-white">
             What is Hiddify?
           </h2>
           <p className="mt-4 text-xl md:w-1/2">
@@ -263,16 +264,16 @@ export default function Home(): JSX.Element {
         </div>
       </section>
 
-      <section className=" relative px-4 py-20 text-gray-600 dark:text-gray-300 md:px-14">
-        <div className="absolute bottom-0 right-72 -z-10 h-[500px] w-[500px] animate-blob rounded-full bg-purple-300 opacity-30 mix-blend-multiply  blur-3xl filter "></div>
-        <div className="animation-delay-2000 animat absolute bottom-72 right-2 -z-10 h-[500px] w-[500px] animate-blob rounded-full bg-pink-300 opacity-30 mix-blend-multiply  blur-3xl filter"></div>
-        <div className="animation-delay-4000 absolute  bottom-40 right-56 -z-10  h-[500px] w-[500px] animate-blob rounded-full bg-blue-300 opacity-30 mix-blend-multiply  blur-3xl filter"></div>
+      <section className="relative my-10 px-4 py-20 text-gray-600 md:px-14 dark:text-gray-300">
+        <div className="clearfix absolute -z-10 h-full max-h-[500px] w-full max-w-[500px] rounded-md bg-purple-300 opacity-30 mix-blend-multiply blur-3xl filter md:bottom-0 md:right-96 md:animate-blob"></div>
+        <div className="animation-delay-2000 clearfix absolute -z-10 h-full max-h-[500px] w-full max-w-[500px] rounded-full bg-pink-300 opacity-30 mix-blend-multiply blur-3xl filter md:bottom-20  md:right-2 md:animate-blob"></div>
+        <div className="animation-delay-4000 clearfix absolute  -z-10 h-full max-h-[500px]  w-full max-w-[500px] rounded-full bg-blue-300 opacity-30 mix-blend-multiply blur-3xl filter md:bottom-40  md:right-56 md:animate-blob"></div>
 
-        <h2 className="text-center text-4xl font-bold text-black dark:text-white">
+        <h2 className="text-center text-3xl font-bold text-black md:text-4xl dark:text-white">
           Frequently asked questions
         </h2>
 
-        <ul className=" relative mx-auto mt-20 max-w-5xl list-none flex-col md:w-[600px]">
+        <ul className="relative mx-auto mt-20 w-full max-w-5xl list-none flex-col">
           {[
             {
               question: "What is Hiddify?",
@@ -319,7 +320,7 @@ export default function Home(): JSX.Element {
               <img src="/img/logo.png" className="h-10 w-10 rounded-full bg-white p-2 text-white" />
               <span className="ml-3 text-xl">Hiddify</span>
             </a>
-            <p className="mt-2 text-sm text-gray-500">
+            <p className="mt-2 text-sm text-gray-100">
               freedom of speech and freedom of access to information are
             </p>
           </div>
