@@ -1,4 +1,103 @@
 {
+  "hiddify": {
+    "message": "Hiddify"
+  },
+  "android": {
+    "message": "Android"
+  },
+  "ios": {
+    "message": "IOS"
+  },
+  "windows": {
+    "message": "Windows"
+  },
+  "linux": {
+    "message": "Linux"
+  },
+  "macos": {
+    "message": "Mac OS"
+  },
+  "home.main.title": {
+    "message": "Hiddify, for a free internet"
+  },
+  "home.main.description": {
+    "message": "It’s our mission to to ensure everyone can access free internet easily by Hiddify, A Powerful and Professional Anti-censorship Toolbox"
+  },
+  "home.hiddify_next.image": {
+    "message": "/img/git-en-reedit.png"
+  },
+  "home.hiddify_next.description": {
+    "message": "Build your own VPN Server by only a few clicks to maximize security"
+  },
+  "home.hiddify_next.description.2": {
+    "message": "Uses latest protocols:"
+  },
+  "home.hiddify_next.description.3": {
+    "message": "Hysteria2, TUICv5, SSH, Reality, VMess and more"
+  },
+  "home.hiddify_next.button.download_for": {
+    "message": "Download for"
+  },
+  "theme.hiddify_next.button.read_more": {
+    "message": "Read more"
+  },
+  "home.hiddify_manager.title.1": {
+    "message": "Build your own VPN Server"
+  },
+  "home.hiddify_manager.title.2": {
+    "message": "Hiddify Manager"
+  },
+  "home.hiddify_manager.description.1": {
+    "message": "Provide VPN services for your group"
+  },
+  "home.hiddify_manager.description.2": {
+    "message": "Downloaded more than X times Supports latest protocols:"
+  },
+  "home.hiddify_manager.description.3": {
+    "message": "Hysteria2, TUICv5, SSH, Reality, VMess and more"
+  },
+  "home.hiddify_manager.image": {
+    "message": "/img/234265624-36ee0a18-d4e8-4803-a9ad-331a7c5998e3.png"
+  },
+  "home.hiddify_manager.button.setup": {
+    "message": "Setup"
+  },
+  "theme.hiddify_manager.button.read_more": {
+    "message": "Read more"
+  },
+  "home.whatis.title": {
+    "message": "What is Hiddify?"
+  },
+  "home.whatis.description": {
+    "message": "Hiddify-Manager is a powerful and professional anti-censorship toolbox, which is a multi-user panel with an effortless installation and supporting more than 20 protocols including Reality and Telegram proxy to circumvent filtering. It's optimized for censorship circumvention in China, Russia and Iran and Recommended by Xray. It's a great replacement of X-UI panel."
+  },
+  "home.advantages.title": {
+    "message": "The Advantages of Hiddify"
+  },
+  "home.advantages.1.title": {
+    "message": "Cross Platform"
+  },
+  "home.advantages.1.description": {
+    "message": "Built with Flutter, Hiddify supports multiple platforms."
+  },
+  "home.advantages.2.title": {
+    "message": "Decentralized"
+  },
+  "home.advantages.2.description": {
+    "message": "Anyone can run a Hiddify server."
+  },
+  "home.advantages.3.title": {
+    "message": "Open-Source and Free"
+  },
+  "home.advantages.3.description": {
+    "message": "free, and free forever"
+  },
+  "home.faq.title": {
+    "message": "Frequently asked questions"
+  },
+  "home.footer.download_client": {
+    "message": "Download Client"
+  },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
     "description": "The title of the fallback page when the page crashed"
@@ -269,32 +368,5 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
-  },
-  "homepage.main_heading_title": {
-    "message": "Hiddify, for a free internet"
-  },
-  "homepage.main_heading_subtitle": {
-    "message": "It's our mission to to ensure everyone can access free internet easily by Hiddify, A Powerful and Professional Anti-censorship Toolbox"
-  },
-  "homepage.main_heading_button": {
-    "message": "Quick installation in 5 minutes ⏱️"
-  },
-  "homepage.featureList_title_1": {
-    "message": "Resistant to filtering"
-  },
-  "homepage.featureList_description_1": {
-    "message": "Supporting protocols Vmess, Vless, Trojan, Telegram MTProto, Xray And automatic IP configuration for Cloudflare"
-  },
-  "homepage.featureList_title_2": {
-    "message": "Smart Proxy"
-  },
-  "homepage.featureList_description_2": {
-    "message": "Circumventing filtering  with quick installation along with a smart proxy to connect to the Internet in three different modes"
-  },
-  "homepage.featureList_title_3": {
-    "message": "Integrated user management"
-  },
-  "homepage.featureList_description_3": {
-    "message": "The ability to add and manage users and limit the time and traffic used on different servers"
   }
 }
