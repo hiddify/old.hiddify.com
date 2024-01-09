@@ -1,6 +1,6 @@
 import React, { ReactElement, useEffect, useState } from "react";
 import Layout from "@theme/Layout";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 import Disclosure from "../components/Disclosure";
 import AndroidSVG from "@site/static/icons/Android.svg";
 import LinuxSVG from "@site/static/icons/linux.svg";
@@ -8,6 +8,9 @@ import MacosSVG from "@site/static/icons/MacOS-Finder.svg";
 import WindowsSVG from "@site/static/icons/microsoft-windows.svg";
 import AppleSVG from "@site/static/icons/Apple.svg";
 import Link from "@docusaurus/Link";
+import Translate, { translate } from "@docusaurus/Translate";
+
+import { FaRegStarHalfStroke } from "react-icons/fa6";
 
 type IconWrapperProps = {
   title: string;
@@ -34,17 +37,11 @@ function detectOS(): string {
     iosPlatforms = ["iPhone", "iPad", "iPod"],
     os = null;
 
-  if (macosPlatforms.indexOf(platform) !== -1) {
-    os = "Mac OS";
-  } else if (iosPlatforms.indexOf(platform) !== -1) {
-    os = "iOS";
-  } else if (windowsPlatforms.indexOf(platform) !== -1) {
-    os = "Windows";
-  } else if (/Android/.test(userAgent)) {
-    os = "Android";
-  } else if (!os && /Linux/.test(platform)) {
-    os = "Linux";
-  }
+  if (macosPlatforms.indexOf(platform) !== -1) os = "macos";
+  else if (iosPlatforms.indexOf(platform) !== -1) os = "ios";
+  else if (windowsPlatforms.indexOf(platform) !== -1) os = "windows";
+  else if (/Android/.test(userAgent)) os = "android";
+  else if (!os && /Linux/.test(platform)) os = "linux";
 
   return os;
 }
@@ -56,18 +53,25 @@ export default function Home(): JSX.Element {
     setPlatformText(detectOS());
   }, []);
   return (
-    <Layout noFooter={true} title="Hiddify" description="Hiddify, for a free internet">
-      <div className="absolute left-72 top-40 -z-10 h-[500px] w-[500px] animate-blob rounded-full bg-purple-300 opacity-30 mix-blend-multiply  blur-3xl filter "></div>
-      <div className="animation-delay-2000 animat left-82 absolute top-72 -z-10 h-[500px] w-[500px] animate-blob rounded-full bg-pink-300 opacity-30 mix-blend-multiply  blur-3xl filter"></div>
-      <div className="animation-delay-4000 absolute  left-56 top-40 -z-10  h-[500px] w-[500px] animate-blob rounded-full bg-blue-300 opacity-30 mix-blend-multiply  blur-3xl filter"></div>
+    <Layout
+      noFooter={true}
+      title={translate({ id: "hiddify" })}
+      description={translate({ id: "home.main.title" })}
+    >
+      <div className="clearfix absolute -z-10 h-full max-h-[500px] w-full max-w-[500px] rounded-full bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-[10%] md:top-[15%] md:animate-blob "></div>
+      <div className="animation-delay-2000 animat clearfix absolute -z-10 h-full max-h-[500px] w-full max-w-[500px] bg-pink-300 opacity-30 mix-blend-multiply blur-3xl filter md:left-[20%] md:top-24 md:animate-blob"></div>
+      <div className="animation-delay-4000 clearfix absolute -z-10 h-full max-h-[500px]  w-full max-w-[500px] bg-blue-300 opacity-30 mix-blend-multiply blur-3xl filter md:left-[30%]  md:top-[20%] md:animate-blob"></div>
+      <div className="clearfix absolute -z-10 h-full max-h-[500px] w-full max-w-[500px] rounded-full bg-purple-300 opacity-30 mix-blend-multiply blur-3xl filter md:left-[20%]  md:top-[15%] md:animate-blob "></div>
 
-      <main className="relative px-4 py-28 text-gray-600 dark:text-gray-300 md:px-14">
-        <h1 className="text-center text-6xl font-semibold text-black dark:text-white md:text-7xl lg:text-8xl ">
-          Hiddify, for a free internet
+      <main className="relative px-4 py-28 text-gray-600 md:px-14 dark:text-gray-300">
+        <h1 className="text-center text-6xl font-semibold text-black md:text-7xl lg:text-8xl dark:text-white">
+          <Translate id="home.main.title">Hiddify, for a free internet</Translate>
         </h1>
         <p className="mx-auto mt-5 max-w-[604px] text-center text-2xl">
-          It’s our mission to to ensure everyone can access free internet easily by Hiddify, A
-          Powerful and Professional Anti-censorship Toolbox
+          <Translate id="home.main.description">
+            It’s our mission to to ensure everyone can access free internet easily by Hiddify, A
+            Powerful and Professional Anti-censorship Toolbox
+          </Translate>
         </p>
       </main>
 
@@ -77,52 +81,81 @@ export default function Home(): JSX.Element {
             <img
               className="h-full w-full rounded object-contain"
               alt="hiddify next"
-              src="/img/git-en-reedit.png"
+              src={useBaseUrl(
+                translate({
+                  id: "home.hiddify_next.image",
+                }),
+              )}
             />
           </div>
           <div className="flex flex-col text-center md:w-1/2 md:items-start md:pl-16 md:text-left lg:flex-grow  lg:pl-24">
-            <h1 className="title-font mb-4 text-3xl font-medium text-gray-900 dark:text-gray-50 sm:text-4xl">
-              Hiddify
+            <h1 className="title-font mb-4 text-3xl font-medium text-gray-900 sm:text-4xl dark:text-gray-50">
+              <Translate id="hiddify">Hiddify</Translate>
             </h1>
             <p className="mb-4 text-xl leading-relaxed text-black dark:text-white">
-              Build your own VPN Server by only a few clicks to maximize security
+              <Translate id="home.hiddify_next.description">
+                Build your own VPN Server by only a few clicks to maximize security
+              </Translate>
             </p>
 
             <div className=" mt-6 flex w-full items-center justify-between gap-6 sm:gap-10 md:max-w-[300px]  lg:gap-10">
-              <IconWrapper title="Android">
+              <IconWrapper
+                title={translate({
+                  id: "android",
+                })}
+              >
                 <AndroidSVG className="h-12 w-12" aria-hidden="true" />
               </IconWrapper>
-              <IconWrapper title="IOS">
+              <IconWrapper
+                title={translate({
+                  id: "ios",
+                })}
+              >
                 <AppleSVG className="h-12 w-12" aria-hidden="true" />
               </IconWrapper>
-              <IconWrapper title="Windows">
+              <IconWrapper
+                title={translate({
+                  id: "windows",
+                })}
+              >
                 <WindowsSVG className="h-12 w-12" aria-hidden="true" />
               </IconWrapper>
-              <IconWrapper title="Linux">
+              <IconWrapper
+                title={translate({
+                  id: "linux",
+                })}
+              >
                 <LinuxSVG className="h-12 w-12" aria-hidden="true" />
               </IconWrapper>
-              <IconWrapper title="MacOS">
+              <IconWrapper
+                title={translate({
+                  id: "macos",
+                })}
+              >
                 <MacosSVG className="h-12 w-12" aria-hidden="true" />
               </IconWrapper>
             </div>
 
             <p className="mt-4 text-lg">
-              Uses latest protocols:
+              <Translate id="home.hiddify_next.description.2">Uses latest protocols:</Translate>
               <br></br>
-              Hysteria2, TUICv5, SSH, Reality, VMess and more
+              <Translate id="home.hiddify_next.description.3">
+                Hysteria2, TUICv5, SSH, Reality, VMess and more
+              </Translate>
             </p>
-            <div className="mt-12 flex justify-center">
+            <div className="mt-12 flex justify-center gap-5">
               <a
                 href="https://app.hiddify.com/"
                 target="_blank"
                 tabIndex={-1}
                 rel="noopener noreferrer"
-                className="inline-flex rounded border-0 bg-[#B8C7F4] px-6 py-2 text-lg text-gray-700 hover:bg-indigo-500 hover:text-white focus:outline-none"
+                className="inline-flex rounded-md border-0 bg-[#B8C7F4] px-6 py-2 text-lg text-gray-700 hover:bg-indigo-500 hover:text-white focus:outline-none"
               >
-                Download for {platformText}
+                <Translate id="home.hiddify_next.button.download_for">Download for</Translate>{" "}
+                {translate({ id: platformText })}
               </a>
-              <button className="ml-4 inline-flex rounded border-0 bg-[#B8C7F4]  px-6 py-2 text-lg text-gray-700 hover:bg-gray-300 focus:outline-none">
-                Read more
+              <button className="inline-flex rounded-md border-0 bg-[#B8C7F4] px-6 py-2 text-lg text-gray-700 hover:bg-indigo-500 hover:text-white focus:outline-none">
+                <Translate id="theme.hiddify_next.button.read_more">Read more</Translate>
               </button>
             </div>
           </div>
@@ -133,27 +166,33 @@ export default function Home(): JSX.Element {
         <div className="container  mx-auto flex flex-col items-center px-8 py-24 md:flex-row">
           <div className="mb-16 flex flex-col items-center text-center md:mb-0 md:w-1/2 md:items-start md:pr-16 md:text-left lg:flex-grow lg:pr-24">
             <h2 className="mb-4 text-xl font-semibold leading-relaxed text-black dark:text-white">
-              Build your own VPN Server
+              <Translate id="home.hiddify_manager.title.1">Build your own VPN Server</Translate>
             </h2>
-            <h1 className="title-font mb-4 text-3xl font-medium text-gray-900 dark:text-gray-50 sm:text-4xl">
-              Hiddify Manager
+            <h1 className="title-font mb-4 text-3xl font-medium text-gray-900 sm:text-4xl dark:text-gray-50">
+              <Translate id="home.hiddify_manager.title.2">Hiddify Manager</Translate>
             </h1>
             <p className="mb-4 text-xl leading-relaxed text-black dark:text-white">
-              Provide VPN services for your group
+              <Translate id="home.hiddify_manager.description.1">
+                Provide VPN services for your group
+              </Translate>
             </p>
 
             <p className="text-md my-12 text-lg leading-relaxed">
-              Downloaded more than X times Supports latest protocols:
+              <Translate id="home.hiddify_manager.description.2">
+                Downloaded more than X times Supports latest protocols:
+              </Translate>
               <br></br>
-              Hysteria2, TUICv5, SSH, Reality, VMess and more
+              <Translate id="home.hiddify_manager.description.3">
+                Hysteria2, TUICv5, SSH, Reality, VMess and more
+              </Translate>
             </p>
 
-            <div className="flex justify-center">
-              <button className="inline-flex rounded border-0 bg-gray-200 px-6 py-2 text-lg text-gray-700 hover:bg-indigo-500 hover:text-white focus:outline-none">
-                Setup
+            <div className="flex justify-center gap-5">
+              <button className="inline-flex rounded-md border-0 bg-gray-100 px-6 py-2 text-lg text-gray-700 hover:bg-gray-200 focus:outline-none">
+                <Translate id="home.hiddify_manager.button.setup">Setup</Translate>
               </button>
-              <button className="ml-4 inline-flex rounded border-0 bg-gray-200 px-6 py-2 text-lg text-gray-700 hover:bg-gray-300 focus:outline-none">
-                Read more
+              <button className="inline-flex rounded-md border-0 bg-gray-100 px-6 py-2 text-lg text-gray-700 hover:bg-gray-200 focus:outline-none">
+                <Translate id="theme.hiddify_manager.button.read_more">Read more</Translate>
               </button>
             </div>
           </div>
@@ -161,7 +200,11 @@ export default function Home(): JSX.Element {
             <img
               className="h-full w-full rounded object-fill"
               alt="Hiddify Manager"
-              src="/img/234265624-36ee0a18-d4e8-4803-a9ad-331a7c5998e3.png"
+              src={useBaseUrl(
+                translate({
+                  id: "home.hiddify_manager.image",
+                }),
+              )}
             />
           </div>
         </div>
@@ -169,15 +212,17 @@ export default function Home(): JSX.Element {
 
       <section className="body-font my-20 text-gray-600 dark:text-gray-300">
         <div className="container mx-auto flex flex-col px-5 py-24 md:flex-row ">
-          <h2 className="text-4xl font-bold text-black dark:text-white md:w-1/3">
-            What is Hiddify?
+          <h2 className="text-4xl font-bold text-black md:w-1/3 dark:text-white">
+            <Translate id="home.whatis.title">What is Hiddify?</Translate>
           </h2>
           <p className="mt-4 text-xl md:w-1/2">
-            Hiddify-Manager is a powerful and professional anti-censorship toolbox, which is a
-            multi-user panel with an effortless installation and supporting more than 20 protocols
-            including Reality and Telegram proxy to circumvent filtering. It's optimized for
-            censorship circumvention in China, Russia and Iran and Recommended by Xray. It's a great
-            replacement of X-UI panel.
+            <Translate id="home.whatis.description">
+              Hiddify-Manager is a powerful and professional anti-censorship toolbox, which is a
+              multi-user panel with an effortless installation and supporting more than 20 protocols
+              including Reality and Telegram proxy to circumvent filtering. It's optimized for
+              censorship circumvention in China, Russia and Iran and Recommended by Xray. It's a
+              great replacement of X-UI panel.
+            </Translate>
           </p>
         </div>
       </section>
@@ -185,7 +230,7 @@ export default function Home(): JSX.Element {
       <section className="body-font text-gray-600 dark:text-gray-300">
         <div className="container mx-auto px-5 py-24">
           <h2 className="text-center text-4xl font-bold text-black dark:text-white">
-            The Advantages of Hiddify
+            <Translate id="home.advantages.title">The Advantages of Hiddify</Translate>
           </h2>
           <div className="mx-auto mt-14 grid max-w-6xl grid-cols-1 gap-10 md:grid-cols-3">
             <div>
@@ -195,10 +240,12 @@ export default function Home(): JSX.Element {
                 src="https://dummyimage.com/300x200"
               />
               <h3 className="mt-2 text-center text-2xl font-bold text-black dark:text-white">
-                Cross Platform
+                <Translate id="home.advantages.1.title">Cross Platform</Translate>
               </h3>
               <p className="mt-2 text-center text-lg">
-                Built with Flutter, Hiddify supports multiple platforms.
+                <Translate id="home.advantages.1.description">
+                  Built with Flutter, Hiddify supports multiple platforms.
+                </Translate>
               </p>
             </div>
             <div>
@@ -208,9 +255,13 @@ export default function Home(): JSX.Element {
                 src="https://dummyimage.com/300x200"
               />
               <h3 className="mt-2 text-center text-2xl font-bold text-black dark:text-white">
-                Decentralized
+                <Translate id="home.advantages.2.title">Decentralized</Translate>
               </h3>
-              <p className="mt-2 text-center text-lg">Anyone can run a Hiddify server.</p>
+              <p className="mt-2 text-center text-lg">
+                <Translate id="home.advantages.2.description">
+                  Anyone can run a Hiddify server.
+                </Translate>
+              </p>
             </div>
             <div>
               <img
@@ -219,60 +270,52 @@ export default function Home(): JSX.Element {
                 src="https://dummyimage.com/300x200"
               />
               <h3 className="mt-2 text-center  text-2xl font-bold text-black dark:text-white">
-                Open-Source and Free
+                <Translate id="home.advantages.3.title">Open-Source and Free</Translate>
               </h3>
               <p className="mt-2 text-center text-lg">
-                An essential aspect of Advantage 1, emphasizing its importance.
+                <Translate id="home.advantages.3.description">free, and free forever</Translate>
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="body-font mb-20 mt-40 text-gray-600 dark:text-gray-300">
+      <section className="body-font mb-20 mt-10 text-gray-600 dark:text-gray-300">
         <div className="container mx-auto px-5 py-24">
-          <h2 className="text-center text-4xl font-bold text-black dark:text-white">
-            Hiddify Impact in numbers
-          </h2>
-          <div className="mx-auto mt-14 grid max-w-6xl grid-cols-1 gap-x-20 gap-y-10 md:grid-cols-3">
-            <div>
-              <h3 className="mt-2 text-center text-2xl font-bold text-black dark:text-white">
-                Panel Download
-              </h3>
-              <p className="mt-2 text-center text-lg">
-                A short text about the advantage 1 and how it is vital.
-              </p>
+          <div className="-m-4 flex flex-wrap text-center">
+            <div className="w-1/2 p-4 sm:w-1/3">
+              <h2 className="title-font text-3xl font-medium text-gray-900 sm:text-4xl dark:text-gray-100">
+                200k
+              </h2>
+              <p className="leading-relaxed">Downloads</p>
             </div>
-            <div>
-              <h3 className="mt-2 text-center text-2xl font-bold text-black dark:text-white">
-                App download
-              </h3>
-              <p className="mt-2 text-center text-lg">
-                A short text about the advantage 1 and how it is vital.
-              </p>
+            <div className="w-1/2 p-4 sm:w-1/3">
+              <h2 className="title-font  text-3xl font-medium text-gray-900 sm:text-4xl dark:text-gray-100">
+                <span>4.8</span>
+                <FaRegStarHalfStroke size="25px" />
+              </h2>
+              <p className="leading-relaxed">Google Play</p>
             </div>
-            <div>
-              <h3 className="mt-2 text-center text-2xl font-bold text-black dark:text-white">
-                Advantage 1
-              </h3>
-              <p className="mt-2 text-center text-lg">
-                A short text about the advantage 1 and how it is vital.
-              </p>
+            <div className="w-1/2 p-4 sm:w-1/3">
+              <h2 className="title-font text-3xl font-medium text-gray-900 sm:text-4xl dark:text-gray-100">
+                soon
+              </h2>
+              <p className="leading-relaxed">App Store</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className=" relative px-4 py-20 text-gray-600 dark:text-gray-300 md:px-14">
-        <div className="absolute bottom-0 right-72 -z-10 h-[500px] w-[500px] animate-blob rounded-full bg-purple-300 opacity-30 mix-blend-multiply  blur-3xl filter "></div>
-        <div className="animation-delay-2000 animat absolute bottom-72 right-2 -z-10 h-[500px] w-[500px] animate-blob rounded-full bg-pink-300 opacity-30 mix-blend-multiply  blur-3xl filter"></div>
-        <div className="animation-delay-4000 absolute  bottom-40 right-56 -z-10  h-[500px] w-[500px] animate-blob rounded-full bg-blue-300 opacity-30 mix-blend-multiply  blur-3xl filter"></div>
+      <section className="relative my-10 px-4 py-20 text-gray-600 md:px-14 dark:text-gray-300">
+        <div className="clearfix absolute -z-10 h-full max-h-[500px] w-full max-w-[500px] rounded-md bg-purple-300 opacity-30 mix-blend-multiply blur-3xl filter md:bottom-0 md:right-96 md:animate-blob"></div>
+        <div className="animation-delay-2000 clearfix absolute -z-10 h-full max-h-[500px] w-full max-w-[500px] rounded-full bg-pink-300 opacity-30 mix-blend-multiply blur-3xl filter md:bottom-20  md:right-2 md:animate-blob"></div>
+        <div className="animation-delay-4000 clearfix absolute  -z-10 h-full max-h-[500px]  w-full max-w-[500px] rounded-full bg-blue-300 opacity-30 mix-blend-multiply blur-3xl filter md:bottom-40  md:right-56 md:animate-blob"></div>
 
-        <h2 className="text-center text-4xl font-bold text-black dark:text-white">
-          Frequently asked questions
+        <h2 className="text-center text-3xl font-bold text-black md:text-4xl dark:text-white">
+          <Translate id="home.faq.title">Frequently asked questions</Translate>
         </h2>
 
-        <ul className=" relative mx-auto mt-20 max-w-5xl list-none flex-col md:w-[600px]">
+        <ul className="relative mx-auto mt-20 w-full max-w-5xl list-none flex-col">
           {[
             {
               question: "What is Hiddify?",
@@ -312,21 +355,24 @@ export default function Home(): JSX.Element {
         </ul>
       </section>
 
-      <footer className="body-font bg-[#455FE9] text-gray-400">
+      <footer className="body-font bg-[#455FE9] text-gray-400 dark:bg-opacity-60">
         <div className="container mx-auto flex flex-col flex-wrap px-5 py-24 md:flex-row md:flex-nowrap md:items-center lg:items-start ">
           <div className="mx-auto w-64 flex-shrink-0 text-center md:mx-0 md:text-left">
             <a className="title-font flex items-center justify-center font-medium text-white md:justify-start">
-              <img src="/img/logo.png" className="h-10 w-10 rounded-full bg-white p-2 text-white" />
+              <img
+                src={useBaseUrl("/img/logo.png")}
+                className="h-10 w-10 rounded-full bg-white p-2 text-white"
+              />
               <span className="ml-3 text-xl">Hiddify</span>
             </a>
-            <p className="mt-2 text-sm text-gray-500">
+            <p className="mt-2 text-sm text-gray-100">
               freedom of speech and freedom of access to information are
             </p>
           </div>
           <div className="-mb-10 mt-10 flex flex-grow flex-wrap text-center md:mt-0 md:pl-20 md:text-left">
             <div className="w-full px-4 md:w-1/2 lg:w-1/4">
               <h2 className="title-font mb-3 text-sm font-medium tracking-widest text-white">
-                Download Client
+                <Translate id="home.footer.download_client">Download Client</Translate>
               </h2>
               <nav className="mb-10 list-none">
                 <li>
@@ -335,7 +381,7 @@ export default function Home(): JSX.Element {
                     target="_blank"
                     className="text-gray-200 hover:text-white"
                   >
-                    IOS
+                    <Translate id="ios">IOS</Translate>
                   </a>
                 </li>
                 <li>
@@ -344,7 +390,7 @@ export default function Home(): JSX.Element {
                     target="_blank"
                     className="text-gray-200 hover:text-white"
                   >
-                    Android
+                    <Translate id="android">Android</Translate>
                   </a>
                 </li>
                 <li>
@@ -353,7 +399,7 @@ export default function Home(): JSX.Element {
                     target="_blank"
                     className="text-gray-200 hover:text-white"
                   >
-                    Windows
+                    <Translate id="windows">Windows</Translate>
                   </a>
                 </li>
                 <li>
@@ -362,7 +408,7 @@ export default function Home(): JSX.Element {
                     target="_blank"
                     className="text-gray-200 hover:text-white"
                   >
-                    Mac
+                    <Translate id="macos">Mac OS</Translate>
                   </a>
                 </li>
                 <li>
@@ -371,17 +417,7 @@ export default function Home(): JSX.Element {
                     target="_blank"
                     className="text-gray-200 hover:text-white"
                   >
-                    Chrome OS
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="https://app.hiddify.com/"
-                    target="_blank"
-                    className="text-gray-200 hover:text-white"
-                  >
-                    Linux
+                    <Translate id="linux">Linux</Translate>
                   </a>
                 </li>
               </nav>

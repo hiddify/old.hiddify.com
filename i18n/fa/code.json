@@ -1,30 +1,102 @@
 {
-  "homepage.main_heading_title": {
-    "message": "هیدیفای٬ برای یک اینترنت آزاد"
+  "hiddify": {
+    "message": "هیدیفای"
   },
-  "homepage.main_heading_subtitle": {
-    "message": "ابزار حرفه‌ای و قدرتمند ضدسانسور"
+  "android": {
+    "message": "اندروید"
   },
-  "homepage.main_heading_button": {
-    "message": "آموزش نصب در ۵ دقیقه ⏱️"
+  "ios": {
+    "message": "ایفون"
   },
-  "homepage.featureList_title_1": {
-    "message": "مقاوم در برابر فیلترینگ"
+  "windows": {
+    "message": "ویندوز"
   },
-  "homepage.featureList_description_1": {
-    "message": "پشتیبانی از پروتکلهای Vmess, Vless, Trojan, Telegram, MTProto, Xray و با قابلیت کانفیگ آیپی خودکار برای کلادفلر"
+  "linux": {
+    "message": "لینوکس"
   },
-  "homepage.featureList_title_2": {
-    "message": "پروکسی هوشمند"
+  "macos": {
+    "message": "مک"
   },
-  "homepage.featureList_description_2": {
-    "message": "پنل گذر از فیلترینگ با امکان نصب سریع به همراه پروکسی هوشمند برای اتصال به اینترنت در سه حالت مختلف"
+  "home.main.title": {
+    "message": "هیدیفای ، برای یک اینترنت آزاد"
   },
-  "homepage.featureList_title_3": {
-    "message": "مدیریت یکپارچه‌ی کاربران"
+  "home.main.description": {
+    "message": "ماموریت ما اطمینان حاصل کردن از این است که همه به راحتی به اینترنت رایگان دسترسی داشته باشند توسط هیدیفای یک ابزار قدرتمند و حرفه‌ای مقابله با سانسور"
   },
-  "homepage.featureList_description_3": {
-    "message": "قابلیت افزودن و مدیریت کاربران و اعمال محدودیت زمان و حجم استفاده شده در سرورهای مختلف"
+  "home.hiddify_next.image": {
+    "message": "/img/git-fa.png"
+  },
+  "home.hiddify_next.description": {
+    "message": "سرور VPN خود را با چند کلیک ایجاد کنید تا امنیت را به حداکثر برسانید"
+  },
+  "home.hiddify_next.description.2": {
+    "message": "استفاده از آخرین پروتکل‌ها:"
+  },
+  "home.hiddify_next.description.3": {
+    "message": "Hysteria2، TUICv5، SSH، Reality، VMess و موارد دیگر"
+  },
+  "home.hiddify_next.button.download_for": {
+    "message": "دانلود برای"
+  },
+  "theme.hiddify_next.button.read_more": {
+    "message": "ادامه مطلب"
+  },
+  "home.hiddify_manager.title.1": {
+    "message": "ایجاد سرور VPN خود"
+  },
+  "home.hiddify_manager.title.2": {
+    "message": "مدیریت هدیدفای"
+  },
+  "home.hiddify_manager.description.1": {
+    "message": "به گروه خود وی پی ان در اختیار بگذارید"
+  },
+  "home.hiddify_manager.description.2": {
+    "message": "x بار دانلود شده از اخرین پروتوکل ها پشتیبانی میکند"
+  },
+  "home.hiddify_manager.description.3": {
+    "message": "Hysteria2 ، Tuicv5 ، SSH ، واقعیت ، VMESS و موارد دیگر"
+  },
+  "home.hiddify_manager.image": {
+    "message": "/img/234265624-36ee0a18-d4e8-4803-a9ad-331a7c5998e3.png"
+  },
+  "home.hiddify_manager.button.setup": {
+    "message": "راه اندازی"
+  },
+  "theme.hiddify_manager.button.read_more": {
+    "message": "ادامه مطلب"
+  },
+  "home.whatis.title": {
+    "message": "هیدیفای چیست؟"
+  },
+  "home.whatis.description": {
+    "message": "Hiddify-Manager یک جعبه ابزار ضد سانسور قدرتمند و حرفه ای است که یک است پانل چند کاربر با نصب بی دردسر و پشتیبانی از بیش از 20 پروتکل             از جمله واقعیت و پروکسی تلگرام برای دور زدن فیلتر. این بهینه شده است      سانسور دور زدن در چین ، روسیه و ایران و توصیه شده توسط Xray. عالی است             جایگزینی پانل X-UI."
+  },
+  "home.advantages.title": {
+    "message": "مزایای هیدیفای"
+  },
+  "home.advantages.1.title": {
+    "message": "پشتیبانی از چندین سیستم عامل"
+  },
+  "home.advantages.1.description": {
+    "message": "ساخته شده با فلاتر، هیدیفای از چندین سیستم عامل پشتیبانی می کند."
+  },
+  "home.advantages.2.title": {
+    "message": "غیر متمرکز"
+  },
+  "home.advantages.2.description": {
+    "message": "هر کسی می‌تواند یک سرور هیدیفای راه اندازی کند."
+  },
+  "home.advantages.3.title": {
+    "message": "منبع باز و رایگان"
+  },
+  "home.advantages.3.description": {
+    "message": "رایگان، و برای همیشه رایگان"
+  },
+  "home.faq.title": {
+    "message": "سوالات متداول"
+  },
+  "home.footer.download_client": {
+    "message": "دانلود برنامه"
   },
   "theme.ErrorPageContent.title": {
     "message": "بارگذاری صفحه با خطا روبرو شد.",
