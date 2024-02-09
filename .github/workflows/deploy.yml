@@ -15,19 +15,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: yarn
+      - uses: oven-sh/setup-bun@v1
 
       - name: Install dependencies 📦
-        run: yarn install --frozen-lockfile
+        run: bun install --frozen-lockfile
 
       - name: Build website 🏗️
-        run: yarn build
+        run: bun run build
 
       - name: Add Domain 👨‍💻
-        run: yarn add-domain
+        run: bun run add-domain
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
