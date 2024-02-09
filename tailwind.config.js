@@ -7,10 +7,6 @@ module.exports = {
   darkMode: ["class", '[data-theme="dark"]'], // hooks into docusaurus' dark mode settigns
   theme: {
     extend: {
-      colors: {
-        primary: "#455FE9",
-        secondary: "#495057",
-      },
       animation: {
         blob: "blob 7s infinite",
       },
@@ -32,5 +28,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
+  plugins: [require("@tailwindcss/typography")],
 };
