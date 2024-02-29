@@ -1,29 +1,29 @@
-# Website
+# hiddify.com
 
-This website is built using [Docusaurus 3](https://docusaurus.io/), a modern static website generator.
+This website is a static website built with vanilla JS and Tailwind.
 
-### Installation
+## Development
 
-```
-$ bun install
-```
-
-### Local Development
-
-```
-$ bun run start
+```bash
+tailwindcss -i ./input.css -o ./docs/assets/output.css --watch
 ```
 
-or if you want to run Persian localization:
+You can serve the docs folder with an HTTP server:
 
-```
-$ bun run start -l fa
-```
-
-### Build
-
-```
-$ bun run build
+```bash
+ruby -run -e httpd docs -p 9090
+# or
+python -m http.server 9090 --directory docs
+# or
+php -S localhost:9090 -t docs
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Then open the browser and go to `http://localhost:9090`.
+
+## Deployment
+
+Run the tailwindcss command with the --minify flag to minify the output CSS file:
+
+```bash
+tailwindcss -i ./input.css -o ./docs/assets/output.css --minify
+```

@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="favicon" href="assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="description" content="Hiddify, for a free internet" data-rh="true" />
+    <link data-rh="true" rel="canonical" href="https://hiddify.com/" />
+    <meta property="og:title" content="Hiddify | Hiddify" data-rh="true" />
+    <title>Hiddify | Hiddify</title>
+    <link href="assets/output.css" rel="stylesheet" />
+    <link href="assets/fonts/Vazirmatn-font-face.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="border-gray-200 px-4 lg:px-6 py-2.5">
+      <nav class="mx-auto container">
+        <div class="flex flex-wrap justify-between items-center">
+          <a href="/" class="flex items-center">
+            <img src="assets/hiddify-logo.png" class="h-6 sm:h-9" alt="Hiddify Logo" />
+          </a>
+
+          <button
+            onclick="toggleShow()"
+            class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              id="show-icon"
+              class="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clipRule="evenodd"
+              />
+            </svg>
+            <svg
+              id="hide-icon"
+              class="w-6 h-6 hidden"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </button>
+
+          <div id="mobile-header">
+            <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+              <li>
+                <a
+                  href="/"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary lg:p-0"
+                >
+                  Apps
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/documentation"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary lg:p-0"
+                >
+                  Documentation
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/about"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary lg:p-0"
+                >
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary lg:p-0"
+                >
+                  🇺🇸 English
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <h1 class="text-4xl container mx-auto mt-40 mb-20">All tutorials and videos</h1>
+
+    <div
+      class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-0 md:animate-blob"
+    ></div>
+    <div
+      class="animation-delay-2000 animat absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-pink-300 opacity-30 mix-blend-multiply blur-3xl filter md:left-[10%] md:animate-blob"
+    ></div>
+    <div
+      class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-[30%] md:animate-blob"
+    ></div>
+    <div
+      class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-[40%] md:animate-blob"
+    ></div>
+
+    <div class="container mx-auto mb-20">
+      <div
+        class="card-item mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20"
+      >
+        <div class="max-w-[552px]">
+          <img src="assets/1.png" alt="image" class="rounded-xl" />
+
+          <h2 class="text-2xl font-bold mt-5">How to install Hiddify</h2>
+
+          <ul class="my-4 list-disc ml-5 text-secondary">
+            <li>
+              <a
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/Installation-prerequisites"
+                target="_blank"
+                >Installation prerequisites</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/How-to-connect-to-server-via-SSH"
+                target="_blank"
+                >How to connect to server via SSH</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/Quick-installation-on-Hetzner-Servers"
+                target="_blank"
+                >Hetzner Servers quick installation</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/Quick-installation-on-Vultr-Servers"
+                target="_blank"
+                >Vultr Servers quick installation</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/Quick-Installation-on-Oracle-Cloud"
+                target="_blank"
+                >Quick installation on Oracle Cloud</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/Quick-Installation-on-OVH-Servers"
+                target="_blank"
+                >Quick installation on OVH Servers</a
+              >
+            </li>
+
+            <div class="hidden">
+              <li>
+                <a
+                  href="https://github.com/hiddify/Hiddify-Manager/wiki/Quick-Installation-on-Microsoft-Azure"
+                  target="_blank"
+                  >Quick installation on Microsoft Azure</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/hiddify/Hiddify-Manager/wiki/Cloud-init-installation"
+                  target="_blank"
+                  >Cloud-init installation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/hiddify/Hiddify-Manager/wiki/Quick-Installation-On-Ubuntu"
+                  target="_blank"
+                  >Quick installation on Ubuntu</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/hiddify/Hiddify-Manager/wiki/Guide-for-Setting-up-the-Domain-and-Finalizing-the-Installation"
+                  target="_blank"
+                >
+                  Guide for setting up the domain and finalizing the installation
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/hiddify/Hiddify-Manager/wiki/How-to-install-different-versions-of-Hiddify-Manager"
+                  target="_blank"
+                  >How to install different versions of Hiddify Manager</a
+                >
+              </li>
+            </div>
+          </ul>
+        </div>
+
+        <div class="border-l border-white p-4 ml-auto">
+          <h4 class="text-md">Related videos</h4>
+          <div class="flex gap-4 mt-4 flex-col ml-2">
+            <a href="https://www.youtube.com/watch?v=PcCfSkMjx4w" target="_blank">
+              <img
+                src="assets/244041345-ed55040a-3239-450b-99d9-34b722cee1a9.png"
+                alt="image"
+                class="rounded-xl w-[184px] h-[103px]"
+              />
+            </a>
+            <a href="https://www.youtube.com/watch?v=XSwCE35lqmU" target="_blank">
+              <img
+                src="assets/235692699-f6cc0a42-3742-44d5-be20-783ac0e50fdc.png"
+                alt="image"
+                class="rounded-xl w-[184px] h-[103px]"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="read-more-par absolute bottom-0 right-0 left-0 h-20 bg-gradient-to-t from-white to-white/10 flex items-center justify-center"
+        >
+          <button class="rounded-3xl bg-[#E2E2E2] p-2 px-4 flex gap-2 items-center">
+            <span>Read more</span>
+            <svg
+              class="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <g fill="none" fill-rule="evenodd">
+                <path
+                  d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+                />
+                <path
+                  fill="currentColor"
+                  d="M12.707 15.707a1 1 0 0 1-1.414 0L5.636 10.05A1 1 0 1 1 7.05 8.636l4.95 4.95l4.95-4.95a1 1 0 0 1 1.414 1.414z"
+                />
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="card-item mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20"
+      >
+        <div class="max-w-[552px]">
+          <img src="assets/image194.png" alt="image" class="rounded-xl" />
+
+          <h2 class="text-2xl font-bold mt-5">Configuration and advanced settings</h2>
+
+          <ul class="my-4 list-disc ml-5 text-secondary">
+            <li>
+              <a
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/How-to-configure-Hiddify-Panel-properly"
+                target="_blank"
+              >
+                How to configure Hiddify Manager properly</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/How-to-connect-and-troubleshoot-via-SSH"
+                target="_blank"
+              >
+                How to connect and troubleshoot via SSH</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/How-to-use-Reality-on-Hiddify"
+                target="_blank"
+              >
+                How to use Reality on Hiddify Manager</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/How-to-set-up-and-use-Telegram-bot-on-Hddify-panel"
+                target="_blank"
+              >
+                How to set up and use Telegram bot on Hiddify Manager</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/How-to-set-up-and-use-Telegram-bot-on-Hddify-panel"
+                target="_blank"
+              >
+                How to set up Telegram proxy on Hiddify Manager</a
+              >
+            </li>
+            <div class="hidden">
+              <li>
+                <a
+                  href="https://github.com/hiddify/Hiddify-Manager/wiki/How-to-activate-WARP-on-the-Hiddify-panel"
+                  target="_blank"
+                >
+                  How to activate WARP on the Hiddify Manager</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/hiddify/Hiddify-Manager/wiki/How-to-backup-and-restore-panel-on-Hiddify"
+                  target="_blank"
+                >
+                  How to backup and restore the Hiddify Manager</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/hiddify/Hiddify-Manager/wiki/How-to-update-Hiddify-panel"
+                  target="_blank"
+                >
+                  How to update Hiddify Manager</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/hiddify/Hiddify-Manager/wiki/SSH-proxy-setting-on-Hiddify-panel"
+                  target="_blank"
+                >
+                  How to setup SSH proxy on Hiddify Manager</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/hiddify/Hiddify-Manager/wiki/How-to-use-subdomains-of-a-website-in-Reality"
+                  target="_blank"
+                >
+                  How to use subdomains of a website in Reality</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/hiddify/Hiddify_Reality_Scanner/blob/main/README.md"
+                  target="_blank"
+                >
+                  How to use Hiddify Reality Scanner</a
+                >
+              </li>
+            </div>
+          </ul>
+        </div>
+
+        <div class="border-l border-white p-4 ml-auto">
+          <h4 class="text-md">Related videos</h4>
+          <div class="flex gap-4 mt-4 flex-col ml-2">
+            <a href="https://www.youtube.com/watch?v=nOe7FhajX3g" target="_blank">
+              <img
+                src="assets/238177886-661b1164-aca9-4ef6-bce8-781ab2970040.png"
+                alt="image"
+                class="rounded-xl w-[184px] h-[103px]"
+              />
+            </a>
+            <a href="https://www.youtube.com/watch?v=eFNPBSy8_to" target="_blank">
+              <img
+                src="assets/261299658-59808c2f-3894-47f7-ab7b-b50c3dbb3d68.jpg"
+                alt="image"
+                class="rounded-xl w-[184px] h-[103px]"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="read-more-par absolute bottom-0 right-0 left-0 h-20 bg-gradient-to-t from-white to-white/10 flex items-center justify-center"
+        >
+          <button class="rounded-3xl bg-[#E2E2E2] p-2 px-4 flex gap-2 items-center">
+            <span>Read more</span>
+            <svg
+              class="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <g fill="none" fill-rule="evenodd">
+                <path
+                  d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+                />
+                <path
+                  fill="currentColor"
+                  d="M12.707 15.707a1 1 0 0 1-1.414 0L5.636 10.05A1 1 0 1 1 7.05 8.636l4.95 4.95l4.95-4.95a1 1 0 0 1 1.414 1.414z"
+                />
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="absolute -z-40 h-full max-h-screen w-full max-w-[700px] bg-pink-200 opacity-60 mix-blend-multiply blur-3xl filter md:left-0 md:animate-blob"
+      ></div>
+      <div
+        class="animation-delay-2000 animat absolute -z-40 h-full max-h-[500px] w-full max-w-[700px] bg-indigo-300 opacity-30 mix-blend-multiply blur-3xl filter md:right-[5%] md:animate-blob"
+      ></div>
+
+      <div
+        class="card-item mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20"
+      >
+        <div class="max-w-[552px]">
+          <img src="assets/image-195.png" alt="image" class="rounded-xl" />
+
+          <h2 class="text-2xl font-bold mt-5">Domain, Worker, CDN and tunneling</h2>
+
+          <ul class="my-4 list-disc text-secondary ml-5 max-w-[402px]">
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/Domain-types-and-how-to-register-them"
+              >
+                Domain types and how to register them
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/What-is-CDN-and-how-does-it-help-us%3F"
+              >
+                What is CDN and how does it help us?
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/How-to-use-GCore-CDN-on-Cloudflare-registered-domain"
+              >
+                How to use GCore CDN
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/How-to-use-Amazon-CDN"
+              >
+                How to use Amazon CDN or Cloudfront</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/Get-Cloudflare-API"
+              >
+                Tutorial on automating subdomain registration on Cloudflare</a
+              >
+            </li>
+            <div class="hidden">
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/hiddify/Hiddify-Manager/wiki/Guide-for-using-mode-Auto_CDN_IP-on-Hiddify"
+                >
+                  How to use AutoCDN IP domain</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/hiddify/Hiddify-Manager/wiki/Tutorial-for-using-wildcard-subdomains-on-Hiddify"
+                >
+                  How to use wildcard subdomains on Hiddify</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/hiddify/Hiddify-Manager/wiki/Guide-for-domain-fronting"
+                >
+                  How to use Domain Fronting</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/332?_x_tr_sl=fa&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp"
+                  >How to manage multiple CDN domains better on Hiddify</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/hiddify/Hiddify-Manager/wiki/Guide-for-finding-a-clean-Cloudflare-IP"
+                  >What is Cloudflare's clean IP and how to find it</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/2009?_x_tr_sl=fa&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp"
+                  >How to use desired clean IPs based on a specific format</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/hiddify/Hiddify-Manager/wiki/How-to-create-subscription-link-on-Hiddify"
+                  >How to create subscription link on Hiddify</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/689?_x_tr_sl=fa&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp"
+                  >Using PHP site for subscription link</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/hiddify/Hiddify-Manager/wiki/How-to-use-the-Cloudflare-worker-domain-on-Hiddify"
+                  >How to use the Cloudflare worker domain on Hiddify</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/hiddify/Hiddify-Manager/wiki/How-to-set-up-and-use-Cloudflare-workers"
+                  >How to setup and use Cloudflare workers</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/129?_x_tr_sl=fa&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp"
+                  >How to setup relay server using IP Tables tunneling</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/493?_x_tr_sl=fa&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp"
+                  >How to setup relay server using GOST</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/851?_x_tr_sl=fa&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp"
+                  >How to setup relay server using WST
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/3442?_x_tr_sl=fa&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp"
+                  >How How to setup relay server using Dokodemo-door
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/3443?_x_tr_sl=fa&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp"
+                  >How How to setup relay server using HA-proxy
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/hiddify/Hiddify-Manager/wiki/How-to-create-and-use-fake-domain"
+                  >How How to create and use fake domain
+                </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+
+        <div class="border-l border-white p-4 ml-auto">
+          <h4 class="text-md">Related videos</h4>
+          <div class="flex gap-4 mt-4 flex-col ml-2">
+            <a href="https://www.youtube.com/watch?v=ea5C93ynkUs" target="_blank">
+              <img
+                src="assets/240580612-97edd880-89ee-4f57-9f8d-d9398a3ceea0.png"
+                alt="image"
+                class="rounded-xl w-[184px] h-[103px]"
+              />
+            </a>
+            <a href="https://youtu.be/gAyfCJt0jXw?si=QSA8kNy_Ua79sN70" target="_blank">
+              <img
+                src="assets/274807068-2e229b5d-4b3d-4588-8434-aff0b278c66a.jpg"
+                alt="image"
+                class="rounded-xl w-[184px] h-[103px]"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="read-more-par absolute bottom-0 right-0 left-0 h-20 bg-gradient-to-t from-white to-white/10 flex items-center justify-center"
+        >
+          <button class="rounded-3xl bg-[#E2E2E2] p-2 px-4 flex gap-2 items-center">
+            <span>Read more</span>
+            <svg
+              class="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <g fill="none" fill-rule="evenodd">
+                <path
+                  d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+                />
+                <path
+                  fill="currentColor"
+                  d="M12.707 15.707a1 1 0 0 1-1.414 0L5.636 10.05A1 1 0 1 1 7.05 8.636l4.95 4.95l4.95-4.95a1 1 0 0 1 1.414 1.414z"
+                />
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="card-item mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20"
+      >
+        <div class="max-w-[552px]">
+          <img src="assets/image-196.png" alt="image" class="rounded-xl" />
+
+          <h2 class="text-2xl font-bold mt-5">Basic concepts and troubleshooting</h2>
+
+          <ul class="my-4 list-disc text-secondary ml-5">
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/How-to-make-sure-the-server's-IP-or-domain-is-clean"
+              >
+                How to make sure the server's IP or domain is clean
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/How-to-connect-to-server-via-SSH"
+              >
+                How to connect and troubleshoot via SSH
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/How-to-set-DNS-server"
+              >
+                How to set DNS server on Hiddify
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://github-com.translate.goog/hiddify/Hiddify-Manager/discussions/859?_x_tr_sl=fa&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp"
+              >
+                How to check DNS leakage and the way to solve it
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/How-to-setup-Firewall-on-Hiddify-panel"
+              >
+                How to setup Firewall on Hiddify panel
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/How-to-monitor-server-resources-on-Hiddify"
+              >
+                How to monitor server resources on Hiddify
+              </a>
+            </li>
+            <div class="hidden">
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/hiddify/Hiddify-Manager/wiki/How-to-monitor-server-resources-on-Hiddify"
+                >
+                  How to do speed test on server
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/hiddify/Hiddify-Manager/wiki/How-to-disable-IP-version-6-on-Hiddify"
+                >
+                  How to disable IP version 6 on Hiddify
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/hiddify/Hiddify-Manager/wiki/Disable-SSH-Password-Authentication"
+                >
+                  Disabling SSH Password Authentication on SSH
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/hiddify/Hiddify-Manager/wiki/How-to-change-SSH-port-on-your-server"
+                >
+                  How to change SSH port on your server
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/hiddify/Hiddify-Manager/wiki/TLS-setting-for-increased-security"
+                >
+                  TLS setting for increased security
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/hiddify/Hiddify-Manager/wiki/How-to-transfer-files-between-a-server-and-a-computer"
+                >
+                  How to transfer files between a server and a computer
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/hiddify/Hiddify-Manager/wiki/How-the-fragment-works-and-its-usage"
+                >
+                  How the fragment works and its usage
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/hiddify/Hiddify-Manager/wiki/Basic-Concepts"
+                >
+                  Basic concepts related to the internet and using proxies
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/hiddify/Hiddify-Manager/wiki/The-correct-format-of-admin-link"
+                >
+                  The correct format of admin link
+                </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+
+        <div
+          class="read-more-par absolute bottom-0 right-0 left-0 h-20 bg-gradient-to-t from-white to-white/10 flex items-center justify-center"
+        >
+          <button class="rounded-3xl bg-[#E2E2E2] p-2 px-4 flex gap-2 items-center">
+            <span>Read more</span>
+            <svg
+              class="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <g fill="none" fill-rule="evenodd">
+                <path
+                  d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+                />
+                <path
+                  fill="currentColor"
+                  d="M12.707 15.707a1 1 0 0 1-1.414 0L5.636 10.05A1 1 0 1 1 7.05 8.636l4.95 4.95l4.95-4.95a1 1 0 0 1 1.414 1.414z"
+                />
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-blue-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-0 md:animate-blob"
+      ></div>
+      <div
+        class="animation-delay-2000 animat absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-indigo-300 opacity-30 mix-blend-multiply blur-3xl filter md:right-[5%] md:animate-blob"
+      ></div>
+
+      <div
+        class="mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20"
+      >
+        <div class="max-w-[552px]">
+          <img src="assets/image-197.png" alt="image" class="rounded-xl" />
+
+          <h2 class="text-2xl font-bold mt-5">HiddifyNext App</h2>
+
+          <ul class="my-4 list-disc text-secondary ml-5">
+            <li>
+              <a
+                href="https://github.com/hiddify/hiddify-next/wiki/How-to-install-HiddifyNext-app"
+                target="_blank"
+                >How to install HiddifyNext app</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/hiddify/hiddify-next/wiki/How-to-use-HiddifyNext-app"
+                target="_blank"
+                >How to use HiddifyNext app</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451px] w-full h-full relative mx-auto my-20"
+      >
+        <div class="max-w-[552px]">
+          <img src="assets/image-196.png" alt="image" class="rounded-xl" />
+
+          <h2 class="text-2xl font-bold mt-5">Client software on Android</h2>
+
+          <ul class="my-4 list-disc text-secondary ml-5">
+            <li>
+              <a
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/Tutorial-for-HiddifyNG-app"
+                target="_blank"
+                >Tutorial for HiddifyNG app</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/Tutorial-for-HiddifyClashAndroid-app"
+                target="_blank"
+                >Tutorial for HiddifyClashAndroid app</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/Tutorial-for-V2rayNG-app"
+                target="_blank"
+                >Tutorial for V2rayNG app</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/Tutorial-for-SingBox-app"
+                target="_blank"
+                >Tutorial for Sing-box app</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/Tutorial-for-Nekobox-app"
+                target="_blank"
+                >Tutorial for Nekobox app</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="border-l border-white p-4 ml-auto overflow-y-scroll">
+          <h4 class="text-md">Related videos</h4>
+          <div class="flex gap-4 mt-4 flex-col ml-2">
+            <a href="https://www.youtube.com/watch?v=hVcWJ8Qg1GQ" target="_blank">
+              <img
+                src="assets/235705873-4f6730b7-a23a-4717-95c3-a5a667db1c59.png"
+                alt="image"
+                class="rounded-xl w-[184px] h-[103px]"
+              />
+            </a>
+            <a href="https://www.youtube.com/watch?v=mUTfYd1_UCM" target="_blank">
+              <img
+                src="assets/235706386-047d5713-2b07-4aa6-bb6b-6464bdc105ef.png"
+                alt="image"
+                class="rounded-xl w-[184px] h-[103px]"
+              />
+            </a>
+            <a href="https://www.youtube.com/watch?v=5AQgbCwHujk" target="_blank">
+              <img
+                src="assets/235707818-ea5ad5dc-8492-4338-8ec0-fc14993fbaaa.png"
+                alt="image"
+                class="rounded-xl w-[184px] h-[103px]"
+              />
+            </a>
+            <a href="https://www.youtube.com/watch?v=Ml7XeYp70mM" target="_blank">
+              <img
+                src="assets/235707725-a6d73e32-178b-4163-9fe8-8aab4e4458fe.png"
+                alt="image"
+                class="rounded-xl w-[184px] h-[103px]"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-0 md:animate-blob"
+      ></div>
+      <div
+        class="animation-delay-2000 animat absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-pink-300 opacity-30 mix-blend-multiply blur-3xl filter md:left-[10%] md:animate-blob"
+      ></div>
+      <div
+        class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-[30%] md:animate-blob"
+      ></div>
+      <div
+        class="absolute -z-40 h-full max-h-[800px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:left-[40%] md:animate-blob"
+      ></div>
+
+      <div
+        class="mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20"
+      >
+        <div class="max-w-[552px]">
+          <img src="assets/image-199.png" alt="image" class="rounded-xl" />
+
+          <h2 class="text-2xl font-bold mt-5">Contents related to client software on iOS</h2>
+
+          <ul class="my-4 list-disc text-secondary ml-5">
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/Tutorial-for-ShadowRocket-app"
+                >Tutorial for ShadowRocket app</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/Tutorial-for-Stash-app"
+                >Tutorial for Stash app</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/Tutorial-for-FoXray-app"
+                >Tutorial for FoXray app</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/Tutorial-for-Fair-VPN-app"
+                >Tutorial for Fair VPN app</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/Tutorial-for-V2Box-app"
+                >Tutorial for V2Box app</a
+              >
+            </li>
+
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/Tutorial-for-Streisand"
+              >
+                Tutorial for Streisand
+              </a>
+            </li>
+
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/Tutorial-for-SingBox-app"
+                >Tutorial for Sing-box app</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="mt-4 flex gap-16 rounded-xl border border-white bg-[rgba(255,255,255,0.5)] p-8 backdrop-blur-xl backdrop-filter max-w-[800px] max-h-[451] w-full h-full relative mx-auto my-20"
+      >
+        <div class="max-w-[552px]">
+          <img src="assets/image-200.png" alt="image" class="rounded-xl" />
+
+          <h2 class="text-2xl font-bold mt-5">Contents related to client software on Desktop</h2>
+
+          <ul class="my-4 list-disc text-secondary ml-5">
+            <li>
+              <a
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/Tutorial-for-HiddifyN-software"
+                target="_blank"
+                >Tutorial for HiddifyN software</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/Tutorial-for-HiddifyClashDesktop-software"
+                target="_blank"
+                >Tutorial for HiddifyClashDesktop software</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/hiddify/Hiddify-Manager/wiki/Tutorial-for-QV2ray-software"
+                target="_blank"
+                >Tutorial for QV2ray software</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="border-l border-white p-4 ml-auto">
+          <h4 class="text-md">Related videos</h4>
+          <div class="flex gap-4 mt-4 flex-col ml-2">
+            <a href="https://www.youtube.com/watch?v=Jnnx1VWMlEs" target="_blank">
+              <img
+                src="assets/248152327-846063e3-1827-41bb-b946-8d2687ab5543.png"
+                alt="image"
+                class="rounded-xl w-[184px] h-[103px]"
+              />
+            </a>
+            <a href="https://www.youtube.com/watch?v=L1VxAcG_7jg" target="_blank">
+              <img
+                src="assets/248152095-f107a096-8abe-4f30-a8a6-b2413803dc86.png"
+                alt="image"
+                class="rounded-xl w-[184px] h-[103px]"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="body-font relative border-white bg-[rgba(255,255,255,0.5)] p-4 text-secondary backdrop-blur-xl backdrop-filter"
+    >
+      <div
+        class="absolute -z-40 h-full max-h-[900px] w-full max-w-[700px] bg-purple-200 opacity-30 mix-blend-multiply blur-3xl filter md:right-[50%] md:animate-blob"
+      ></div>
+
+      <div
+        class="container mx-auto flex flex-col flex-wrap px-5 py-24 md:flex-row md:flex-nowrap md:items-center lg:items-start"
+      >
+        <div class="mx-auto w-64 flex-shrink-0 text-center md:mx-0 md:text-left">
+          <a
+            class="title-font flex items-center justify-center font-medium text-white md:justify-start"
+          >
+            <img src="assets/hiddify-logo.png" class="h-11 text-black" />
+          </a>
+          <p class="mt-4 text-sm">
+            To ensure everyone can access the unrestricted internet easily with a powerful and
+            professional anti-censorship tool
+          </p>
+        </div>
+        <div
+          class="-mb-10 mt-10 flex flex-grow flex-wrap text-center md:mt-0 md:pl-20 md:text-left"
+        >
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <h2 class="title-font mb-3 text-lg">Download Client</h2>
+            <nav class="mb-10 list-none">
+              <li>
+                <a href="https://app.hiddify.com/" target="_blank" class="text-sm hover:text-white">
+                  Android
+                </a>
+              </li>
+              <li>
+                <a href="https://app.hiddify.com/" target="_blank" class="text-sm hover:text-white">
+                  IOS
+                </a>
+              </li>
+              <li>
+                <a href="https://app.hiddify.com/" target="_blank" class="text-sm hover:text-white">
+                  Windows
+                </a>
+              </li>
+              <li>
+                <a href="https://app.hiddify.com/" target="_blank" class="text-sm hover:text-white">
+                  MacOS
+                </a>
+              </li>
+              <li>
+                <a href="https://app.hiddify.com/" target="_blank" class="text-sm hover:text-white">
+                  Linux
+                </a>
+              </li>
+            </nav>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <h2 class="title-font mb-3 text-lg">Setup Hiddify Manager</h2>
+            <nav class="mb-10 list-none">
+              <li>
+                <a
+                  href="docs/installation/normal/ubuntu-installation"
+                  class="text-sm hover:text-white"
+                >
+                  Ubuntu
+                </a>
+              </li>
+              <li>
+                <a
+                  href="docs/installation/normal/docker-installation"
+                  class="text-sm hover:text-white"
+                >
+                  Docker
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-sm hover:text-white"
+                  href="docs/installation/quick/quick-install-hetzner"
+                >
+                  Hetzner
+                </a>
+              </li>
+              <li>
+                <a
+                  href="docs/installation/quick/quick-install-oracle-cloud"
+                  class="text-sm hover:text-white"
+                >
+                  Oracle Cloud
+                </a>
+              </li>
+              <li>
+                <a
+                  href="docs/installation/quick/quick-install-vultr"
+                  class="text-sm hover:text-white"
+                >
+                  Vultr
+                </a>
+              </li>
+              <li>
+                <a
+                  href="docs/installation/quick/quick-install-ovh"
+                  class="text-sm hover:text-white"
+                >
+                  OVH
+                </a>
+              </li>
+            </nav>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <h2 class="title-font mb-3 text-lg">Support</h2>
+            <nav class="mb-10 list-none">
+              <li>
+                <a class="text-sm hover:text-white" href="https://t.me/hiddify">
+                  Visit GitHub Wiki
+                </a>
+              </li>
+              <li>
+                <a class="text-sm hover:text-white" href="https://t.me/hiddify">
+                  Join Telegram Group
+                </a>
+              </li>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex justify-center">
+          <p class="text-center text-sm sm:text-left">
+            Powered by 2024 Hiddify team. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      var cardItems = document.querySelectorAll(".card-item");
+      cardItems.forEach(function (item) {
+        var show_more = item.querySelector("button");
+        var contents = item.querySelector(".hidden");
+        var read_more_par = item.querySelector(".read-more-par");
+
+        if (show_more) {
+          show_more.addEventListener("click", function () {
+            contents.outerHTML = contents.innerHTML;
+            read_more_par.outerHTML = "";
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

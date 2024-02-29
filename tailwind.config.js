@@ -1,12 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  corePlugins: {
-    preflight: false, // disable Tailwind's reset
-  },
-  content: ["./src/**/*.{js,jsx,ts,tsx,md,mdx}", "../docs/**/*.{md,mdx}"],
-  darkMode: ["class", '[data-theme="dark"]'], // hooks into docusaurus' dark mode settigns
+  content: ["./docs/**/*.{html,js}"],
   theme: {
     extend: {
+      colors: {
+        primary: "#455FE9",
+        secondary: "#495057",
+      },
       animation: {
         blob: "blob 7s infinite",
       },
@@ -28,5 +28,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [],
 };
