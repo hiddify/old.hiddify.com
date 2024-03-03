@@ -14,9 +14,9 @@
   </head>
 
   <body>
-    <header class="border-gray-200 px-4 lg:px-6 py-2.5">
-      <nav class="mx-auto container">
-        <div class="flex flex-wrap justify-between items-center">
+    <header class="border-gray-200 px-4 lg:px-6">
+      <nav class="mx-auto py-2.5 container lg:flex lg:items-center lg:justify-between">
+        <div class="flex flex-wrap justify-between items-center w-full">
           <a href="/" class="flex items-center">
             <img src="assets/hiddify-logo.png" class="h-6 sm:h-9" alt="Hiddify Logo" />
           </a>
@@ -53,43 +53,48 @@
               />
             </svg>
           </button>
+        </div>
 
-          <div id="mobile-header">
-            <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-              <li>
-                <a
-                  href="/"
-                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary lg:p-0"
-                >
-                  Apps
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/documentation"
-                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary lg:p-0"
-                >
-                  Documentation
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/about"
-                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary lg:p-0"
-                >
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/"
-                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary lg:p-0"
-                >
-                  🇺🇸 English
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div
+          id="mobile-header"
+          class="hidden sm:flex flex-col sm:items-end sm:space-y-2 sm:space-x-0 align-items-center"
+        >
+          <ul
+            class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 items-center lg:min-w-[400px]"
+          >
+            <li>
+              <a
+                href="/"
+                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary lg:p-0"
+              >
+                Apps
+              </a>
+            </li>
+            <li>
+              <a
+                href="/documentation"
+                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary lg:p-0"
+              >
+                Documentation
+              </a>
+            </li>
+            <li>
+              <a
+                href="/about"
+                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary lg:p-0"
+              >
+                About Us
+              </a>
+            </li>
+            <li>
+              <a
+                href="/"
+                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary lg:p-0"
+              >
+                🇺🇸 English
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -1056,29 +1061,19 @@
             <h2 class="title-font mb-3 text-lg">Download Client</h2>
             <nav class="mb-10 list-none">
               <li>
-                <a href="https://app.hiddify.com/" target="_blank" class="text-sm hover:text-white">
-                  Android
-                </a>
+                <a href="https://app.hiddify.com/" target="_blank" class="text-sm"> Android </a>
               </li>
               <li>
-                <a href="https://app.hiddify.com/" target="_blank" class="text-sm hover:text-white">
-                  IOS
-                </a>
+                <a href="https://app.hiddify.com/" target="_blank" class="text-sm"> IOS </a>
               </li>
               <li>
-                <a href="https://app.hiddify.com/" target="_blank" class="text-sm hover:text-white">
-                  Windows
-                </a>
+                <a href="https://app.hiddify.com/" target="_blank" class="text-sm"> Windows </a>
               </li>
               <li>
-                <a href="https://app.hiddify.com/" target="_blank" class="text-sm hover:text-white">
-                  MacOS
-                </a>
+                <a href="https://app.hiddify.com/" target="_blank" class="text-sm"> MacOS </a>
               </li>
               <li>
-                <a href="https://app.hiddify.com/" target="_blank" class="text-sm hover:text-white">
-                  Linux
-                </a>
+                <a href="https://app.hiddify.com/" target="_blank" class="text-sm"> Linux </a>
               </li>
             </nav>
           </div>
@@ -1086,52 +1081,26 @@
             <h2 class="title-font mb-3 text-lg">Setup Hiddify Manager</h2>
             <nav class="mb-10 list-none">
               <li>
-                <a
-                  href="docs/installation/normal/ubuntu-installation"
-                  class="text-sm hover:text-white"
-                >
-                  Ubuntu
-                </a>
+                <a href="docs/installation/normal/ubuntu-installation" class="text-sm"> Ubuntu </a>
               </li>
               <li>
-                <a
-                  href="docs/installation/normal/docker-installation"
-                  class="text-sm hover:text-white"
-                >
-                  Docker
-                </a>
+                <a href="docs/installation/normal/docker-installation" class="text-sm"> Docker </a>
               </li>
               <li>
-                <a
-                  class="text-sm hover:text-white"
-                  href="docs/installation/quick/quick-install-hetzner"
-                >
+                <a class="text-sm" href="docs/installation/quick/quick-install-hetzner">
                   Hetzner
                 </a>
               </li>
               <li>
-                <a
-                  href="docs/installation/quick/quick-install-oracle-cloud"
-                  class="text-sm hover:text-white"
-                >
+                <a href="docs/installation/quick/quick-install-oracle-cloud" class="text-sm">
                   Oracle Cloud
                 </a>
               </li>
               <li>
-                <a
-                  href="docs/installation/quick/quick-install-vultr"
-                  class="text-sm hover:text-white"
-                >
-                  Vultr
-                </a>
+                <a href="docs/installation/quick/quick-install-vultr" class="text-sm"> Vultr </a>
               </li>
               <li>
-                <a
-                  href="docs/installation/quick/quick-install-ovh"
-                  class="text-sm hover:text-white"
-                >
-                  OVH
-                </a>
+                <a href="docs/installation/quick/quick-install-ovh" class="text-sm"> OVH </a>
               </li>
             </nav>
           </div>
@@ -1139,14 +1108,10 @@
             <h2 class="title-font mb-3 text-lg">Support</h2>
             <nav class="mb-10 list-none">
               <li>
-                <a class="text-sm hover:text-white" href="https://t.me/hiddify">
-                  Visit GitHub Wiki
-                </a>
+                <a class="text-sm" href="https://t.me/hiddify"> Visit GitHub Wiki </a>
               </li>
               <li>
-                <a class="text-sm hover:text-white" href="https://t.me/hiddify">
-                  Join Telegram Group
-                </a>
+                <a class="text-sm" href="https://t.me/hiddify"> Join Telegram Group </a>
               </li>
             </nav>
           </div>
@@ -1162,6 +1127,22 @@
     </footer>
 
     <script>
+      function toggleShow() {
+        var mobileHeader = document.getElementById("mobile-header");
+        var showIcon = document.getElementById("show-icon");
+        var hideIcon = document.getElementById("hide-icon");
+
+        if (mobileHeader.classList.contains("hidden")) {
+          mobileHeader.classList.remove("hidden");
+          showIcon.classList.add("hidden");
+          hideIcon.classList.remove("hidden");
+        } else {
+          mobileHeader.classList.add("hidden");
+          showIcon.classList.remove("hidden");
+          hideIcon.classList.add("hidden");
+        }
+      }
+
       var cardItems = document.querySelectorAll(".card-item");
       cardItems.forEach(function (item) {
         var show_more = item.querySelector("button");
